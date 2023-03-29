@@ -1,0 +1,1 @@
+<?php $v=ucfirSt('BSE71B6X');
