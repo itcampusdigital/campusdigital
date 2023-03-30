@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Gambara;
+use App\Models\gallery;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
 use Ajifatur\FaturCMS\Models\Cabang;
@@ -34,7 +35,7 @@ class CabangController extends Controller
         
 		referral($request->query('ref'), 'site.galery.index');
 		
-		$all_gambar = Gambara::orderBy('id','desc')->get();
+		$all_gambar = gallery::orderBy('id','desc')->get();
 		// View
 		return view('front.galery.index',[
             'gambarr' => $all_gambar,
@@ -56,14 +57,21 @@ class CabangController extends Controller
             'gambar' => 'required|file|image'
         ]);
 
-        
+        if($request->hasFile('gambar')){
             $gambar = $request->file('gambar');
             $nama_gambar = $gambar->getClientOriginalName();
             
-            
+           
+            $gambar->move(public_path().'/assets/images/dokumentasi', $nama_gambar);
             $validator['gambar'] = $nama_gambar;
-        	
+        }
 
+        gallery::create($validator);
+       
+        
+		// View
+		return redirect()->back();
+        
         
 
     }
