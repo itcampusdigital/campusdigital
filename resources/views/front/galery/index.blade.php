@@ -9,8 +9,8 @@
     <div class="row align-items-center">
       <div class="col-lg-6 order-2 order-lg-1 text-center text-lg-start">
         <h1>Galery</h1>
-        <h4 class="fw-normal">Dokumentasi Campus Digital</h4>
-		@if(!Auth::guest() && Auth::user()->role == 1)
+        <h4 class="fw-normal">Dokumentasi Pelatihan Campus Digital</h4>
+		    @if(!Auth::guest() && Auth::user()->role == 1)
           <a type="button" href={{ route('site.galery.create') }} class="btn btn-dark">Tambah Gambar</a>
         @endif
       </div>
