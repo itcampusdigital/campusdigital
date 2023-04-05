@@ -67,12 +67,52 @@ class CabangController extends Controller
         }
 
         gallery::create($validator);
-       
-        
+              
 		// View
 		return redirect()->back();
-        
-        
+    }
+
+    public function edit(Request $request, $id){
+
+        referral($request->query('ref'), 'galery.edit',['id'=>$id]);
+        $list_gambar = gallery::where('id','=',$id)->first();
+
+        return view('front.galery.edit',[
+            'gambar' => $list_gambar
+        ]);
+    }
+
+    public function update(Request $request, $id)
+    {
+
+        referral($request->query('ref'), 'site.galery.index');
+
+        $all_gambar = gallery::orderBy('id','desc')->get();
+
+        $validator = $request->validate([
+            'judul_gambar' => 'required',
+            'gambar' => 'required|file|image'
+        ]);
+
+        if($request->hasFile('gambar')){
+            $gambar = $request->file('gambar');
+            $nama_gambar = $gambar->getClientOriginalName();
+            
+           
+            $gambar->move(public_path().'/assets/images/dokumentasi', $nama_gambar);
+            $validator['gambar'] = $nama_gambar;
+        }
+
+        $user = gallery::find($id);
+        $user->judul_gambar = $validator['judul_gambar'];
+        $user->gambar = $validator['gambar'];
+        $user->update();
+              
+		// View
+        return view('front.galery.index',[
+            'gambarr' => $all_gambar,
+            
+        ]);
 
     }
 }
