@@ -1,42 +1,44 @@
 @extends('template.main')
 
 @section('content')
+{{--  --}}
+<div class="card">
 <section class="hero-section">
-  <div class="container text-start h-100">
-    <div class="row align-items-center h-100">
-      <div class="col-lg-6">
-        <div class="">
-          <div class="text-center text-lg-start">
-          	<h1>Let's Join Us!</h1>
-		  	    <h2 class="mb-3"><span style="color: var(--primary);">Digital</span> Technology<br>& Business Class</h2>
-          </div>
-          <div class="text-center text-lg-start">
-      			<p class="mb-3">Mari bergabung bersama kami untuk<br>mendapatkan ilmunya!</p>
-      			<p><a href="{{ route('auth.register') }}" class="btn btn-primary rounded-15 px-5 shadow-sm fw-bold">Daftar</a></p>
-          </div>
+  <div class="py-5 bgfull" style="max-height:600px;width:auto;background-image: url('{{ asset('assets/images/background/pattern.svg') }}'); background-size: cover; background-repeat: repeat;">
+    <div class="container text-start">
+
+      <div class="row align-items-center">
+
+        <div id="bct1" class="imah1 col-md-3 col-sm-3 text-center">
+          <img src="{{ asset('assets/images/background/person-11.png') }}">
         </div>
-    </div>
-    <div class="col-lg-6 text-center">
-      <img src="{{ asset('assets/images/background/1.png') }}" class="hero">
-      {{--<div class="banner-video" style="background-image: url({{asset('assets/images/background/hero.png')}}) ">--}}
-        {{--<div class="card shadow border-0 front-card-zoom">
-          <div class="card-header d-flex align-items-center justify-content-end">
-            <i class="fa fa-circle px-1 text-success"></i>
-            <i class="fa fa-circle px-1 text-warning"></i>
-            <i class="fa fa-circle px-1 text-danger"></i>
-          </div>
-          <div class="overflow-hidden">
-            <a class="popup-youtube" href="https://www.youtube.com/watch?v=AfGz0Z9HGfU">
-              <div class="banner-video" style="background-image: url({{asset('assets/images/background/banner-600.gif')}})">
-                <div class="overlay-banner text-center"><i class="fab fa-youtube overlay-galery-content"></i></div>
+
+        <div class="imsama col-sm-12 col-md-6" >
+            <div class="text-lg-start">
+              <h1 class="fontjudul" style="color:#340369;text-align: center">Let's Join Us!</h1>
+              <h3 style="text-align: center" class="fontdigital mb-3">Digital Technology <br> & Business Class</h3>
+            </div>
+            <div class="text-lg-start">
+              <p style="text-align: center" class="fonttext mb-3">Mari bergabung bersama kami untuk mendapatkan ilmunya!</p>
+              <div class="text-center">
+
+                <a href="{{ route('auth.register') }}" class="btn btn-primary rounded-15 px-5 shadow-sm fw-bold">Daftar</a>
               </div>
-            </a>
-          </div>
-        </div>--}}
-    </div>
+            </div>
+        </div>
+        
+        
+        <div id="bct2" class="imah1 col-md-3 col-sm-4 text-center" >
+          <img src="{{ asset('assets/images/background/person-21.png') }}">
+        </div>
+        
+      </div>
   </div>
 </section>
-<section class="why-section spad">
+</div>
+
+<div class="card" style="border-radius: 20%">
+<section class="www">
   <div class="container">
     <div>
       <div class="title mb-4 text-center">
@@ -105,7 +107,7 @@
     </div>
   </div>
 </section>
-
+</div>
 <section class="feature-section bg-light pt-5">
   <div class="container">
     <div class="text-center">
@@ -391,12 +393,23 @@ $(document).ready(function() {
     type: 'iframe'
   });
 });
+
+
 </script>
 @endsection
 
 @section('css-extra')
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.0.0/magnific-popup.min.css" integrity="sha512-nIm/JGUwrzblLex/meoxJSPdAKQOe2bLhnrZ81g5Jbh519z8GFJIWu87WAhBH+RAyGbM4+U3S2h+kL5JoV6/wA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 <style type="text/css">
+  
+  .imah1 img{
+    
+    height: auto;
+    max-width: 100%;
+    display: none;
+  }
+
+
 	.hero {max-width: 700px; background-position: center; background-size: cover; animation: up-down 1.5s ease-in-out infinite alternate-reverse both;}
 	@keyframes up-down {
 	  0% {
@@ -419,15 +432,83 @@ $(document).ready(function() {
 	.hs-text h2 {font-size: 70px; margin-bottom: 0;}
 	.hs-text h3 {font-size: 55px; margin-bottom: 0;}
 	.hs-text p {font-size: 20px; margin-bottom: 0; margin-start: 20px;}
+
+  @media only screen and (min-width:1337px)
+  {
+    .imah1 img{
+    margin-top:240px;
+    display: block;
+    }
+  }
+
+  @media only screen and (min-width:1200px) and (max-width:1336px)
+  {
+    .imah1 img{
+    margin-top:280px;
+    display: block;
+    }
+  }
+
+
+  @media only screen and (min-width:992px) and (max-width:1199px)
+  {
+    .imah1 img{
+    margin-top:320px;
+    display: block;
+    }
+  }
+
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    .fontjudul{
+    font-size: 1em;
+    }
+
+  .fontdigital{
+    font-size: 1em;
+    }
+
+  .fonttext{
+    font-size: 1em;
+    }
+
+
+    .imah1 img{
+      margin-top:375px;
+
+      
+      height: auto;
+    }
+}
+
 	@media only screen and (max-width: 767px) {
+    .bgfull{
+      height: 
+    }
+    .fontjudul{
+    font-size: 1em;
+    }
+
+  .fontdigital{
+    font-size: 1em;
+    }
+
+  .fonttext{
+    font-size: 1em;
+    }
+
+  .imah1 img{
+
+    margin-top:5em;
+  }
+
 		.hero-section {padding-top: 5em;}
 		.hs-text {padding-top: 0; margin-bottom: 0;}
 		.hs-text h2 {font-size: 50px; margin-bottom: 0;}
 		.hs-text h3 {font-size: 35px; margin-bottom: 0;}
 		.hs-text p {margin-start: 0;}
 		.hero {height: 350px; margin-top: -50px margin-bottom: -20px}
-	}
-	@media only screen and (min-width: 768px) and (max-width: 991px) {
+	
+  
 		.hero-section {padding-top: 5em;}
 		.hs-text {padding-top: 0; margin-bottom: 0;}
 		.hs-text h2 {font-size: 60px; margin-bottom: 0;}
@@ -435,7 +516,18 @@ $(document).ready(function() {
 		.hs-text p {margin-start: 0;}
 		.hero {height: 450px; margin-top: -50px}
 }
-	}
+
+@media only screen and (max-width:576px){
+
+
+  .imsama{
+    display: inline-block;
+    margin-top: 15%;
+  }
+
+}
+
+	
 </style>
 
 @endsection

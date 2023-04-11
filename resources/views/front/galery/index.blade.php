@@ -28,7 +28,7 @@
         <div class="card border-0 shadow-sm">
           <div class="card-header bg-white text-center"><h5>{{ $gambars->judul_gambar }}</h5></div>
           <img style="height:350px" src="{{ asset('assets/images/dokumentasi/'.$gambars->gambar) }}">
-          @if (Auth::user()->id_user == 1)
+          @if (!Auth::guest() && Auth::user()->id_user == 1)
             <a href="{{ route('galery.edit',['id'=>$gambars->id]) }}" type="button" class="btn btn-info">Edit</a>
           @endif
           

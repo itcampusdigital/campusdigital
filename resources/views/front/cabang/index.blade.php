@@ -5,6 +5,7 @@
 @section('content')
 
 <section class="page-top-section set-bg">
+  <div class="py-5 text-white" style="background-image: url('{{ asset('assets/images/background/b1bde199d76dd22fc49aa288b0d5ab10.svg') }}'); background-size: cover; background-repeat: no-repeat; filter: hue-rotate(45deg);">
   <div class="container">
     <div class="row align-items-center">
       <div class="col-lg-6 order-2 order-lg-1 text-center text-lg-start">
@@ -15,6 +16,7 @@
         <img class="h-auto mb-3 mb-lg-0 img-header" src="{{asset('assets/images/illustration/min/5469.png')}}" alt="banner">
       </div>
     </div>
+  </div>
   </div>
 </section>
 <section class="info-section spad pt-5">
