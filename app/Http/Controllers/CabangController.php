@@ -2,8 +2,9 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Gambara;
 use App\Models\gallery;
+use App\Models\Gambara;
+use Illuminate\Support\Facades\File;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
 use Ajifatur\FaturCMS\Models\Cabang;
@@ -114,5 +115,25 @@ class CabangController extends Controller
             
         ]);
 
+    }
+
+    public function delete(Request $request, $id)
+    {
+        $galleri = gallery::find($id);
+
+        $path = public_path('assets/images/dokumentasi/'.$galleri['gambar']);
+
+        if(File::exists($path)){
+            File::delete($path);
+            $galleri->delete();
+            return redirect()->back();
+        }
+
+        else{
+            alert('File tidak ditemukan');
+            return redirect()->back();
+        }
+
+        
     }
 }

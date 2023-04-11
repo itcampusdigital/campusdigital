@@ -29,7 +29,14 @@
           <div class="card-header bg-white text-center"><h5>{{ $gambars->judul_gambar }}</h5></div>
           <img style="height:350px" src="{{ asset('assets/images/dokumentasi/'.$gambars->gambar) }}">
           @if (!Auth::guest() && Auth::user()->id_user == 1)
-            <a href="{{ route('galery.edit',['id'=>$gambars->id]) }}" type="button" class="btn btn-info">Edit</a>
+            <table>
+              <td>
+                <a href="{{ route('galery.edit',['id'=>$gambars->id]) }}" type="button" class="btn btn-info bok">Edit</a>
+              </td>
+              <td>
+                <a href="{{ route('galery.delete',['id'=>$gambars->id]) }}" type="button" class="btn btn-danger bok">Delete</a>
+              </td>
+            </table>
           @endif
           
         </div>
@@ -47,6 +54,13 @@
 
 <style type="text/css">
   .info-text {padding-top: 0;}
+
+  .bok {
+  display: block;
+  width: 100%;
+  cursor: pointer;
+  text-align: center;
+}
 </style>
 
 @endsection
