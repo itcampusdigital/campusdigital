@@ -5,11 +5,15 @@
 @section('content')
 
 <section class="page-top-section set-bg">
+  <div class="py-5" style="background-image: url('{{ asset('assets/images/background/b1bde199d76dd22fc49aa288b0d5ab10.svg') }}'); background-size: cover; background-repeat: no-repeat; filter: hue-rotate(45deg);">
   <div class="container">
     <div class="row align-items-center">
       <div class="col-lg-6 order-2 order-lg-1 text-center text-lg-start">
-        <h1>Galery</h1>
-        <h4 class="fw-normal">Dokumentasi Pelatihan Campus Digital</h4>
+        <h1 class="text-white">Galery</h1>
+        <br>
+        <div class="jud">
+          <h4 class="dok">Dokumentasi Pelatihan Campus Digital</h4>
+        </div>
 		    @if(!Auth::guest() && Auth::user()->role == 1)
           <a type="button" href={{ route('site.galery.create') }} class="btn btn-dark">Tambah Gambar</a>
         @endif
@@ -18,6 +22,7 @@
         <img class="h-auto mb-3 mb-lg-0 img-header" src="{{asset('assets/images/illustration/min/5758.png')}}" alt="banner">
       </div>
     </div>
+  </div>
   </div>
 </section>
 <section>
@@ -41,7 +46,12 @@
           
         </div>
       </div>
+     
 		@endforeach
+    <div class="pagination justify-content-center">
+
+      {{ $gambarr->links() }}
+    </div>
   </div>
 </section>
 
@@ -60,6 +70,19 @@
   width: 100%;
   cursor: pointer;
   text-align: center;
+}
+
+.jud{
+  background-color: whitesmoke;
+  border-radius: 20px;
+  padding-left: 10px;
+  padding-bottom: 1px
+}
+
+.jud .dok{
+  ; 
+  filter: brightness(20%);
+  color: var(--primary);
 }
 </style>
 

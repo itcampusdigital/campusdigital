@@ -36,7 +36,7 @@ class CabangController extends Controller
         
 		referral($request->query('ref'), 'site.galery.index');
 		
-		$all_gambar = gallery::orderBy('id','desc')->get();
+		$all_gambar = gallery::orderBy('id','desc')->paginate(8);
 		// View
 		return view('front.galery.index',[
             'gambarr' => $all_gambar,
@@ -87,24 +87,25 @@ class CabangController extends Controller
     {
 
         referral($request->query('ref'), 'site.galery.index');
-
         $all_gambar = gallery::orderBy('id','desc')->get();
+
 
         $validator = $request->validate([
             'judul_gambar' => 'required',
             'gambar' => 'required|file|image'
         ]);
 
+
         if($request->hasFile('gambar')){
             $gambar = $request->file('gambar');
             $nama_gambar = $gambar->getClientOriginalName();
             
-           
             $gambar->move(public_path().'/assets/images/dokumentasi', $nama_gambar);
             $validator['gambar'] = $nama_gambar;
         }
 
         $user = gallery::find($id);
+
         $user->judul_gambar = $validator['judul_gambar'];
         $user->gambar = $validator['gambar'];
         $user->update();
