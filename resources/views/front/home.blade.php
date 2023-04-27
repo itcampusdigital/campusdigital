@@ -4,16 +4,16 @@
 {{--  --}}
 <div class="card">
 <section class="hero-section">
-  <div class="py-5 bgfull" style="max-height:600px;width:auto;background-image: url('{{ asset('assets/images/background/pattern.svg') }}'); background-size: cover; background-repeat: repeat;">
-    <div class="container text-start">
+  <div class="child_sec" style="background-image: url('{{ asset('assets/images/background/pattern.svg') }}'); background-size: contain;">
+    
+    <div class="container child_sec">
+      <div class="row pare text-center">
 
-      <div class="row align-items-center">
-
-        <div id="bct1" class="imah1 col-md-3 col-sm-3 text-center">
-          <img src="{{ asset('assets/images/background/person-11.png') }}">
+        <div class="order-1 order-sm-1 order-lg-1 order-xl-0 col-6 col-sm-6 col-md-6 col-lg-6 col-xl-4 col-xxl-4 align-self-end">
+          <img class="img12 img-fluid" src="{{ asset('assets/images/background/person-11.png') }}">
         </div>
 
-        <div class="imsama col-sm-12 col-md-6" >
+        <div class="jud1 order-xl-1 col-12 col-sm-12 col-md-12 col-lg-12 col-xl-4 col-xxl-4 align-self-center">
             <div class="text-lg-start">
               <h1 class="fontjudul" style="color:#340369;text-align: center">Let's Join Us!</h1>
               <h3 style="text-align: center" class="fontdigital mb-3">Digital Technology <br> & Business Class</h3>
@@ -27,9 +27,8 @@
             </div>
         </div>
         
-        
-        <div id="bct2" class="imah1 col-md-3 col-sm-4 text-center" >
-          <img src="{{ asset('assets/images/background/person-21.png') }}">
+        <div class="order-2 order-sm-2 order-lg-2 order-xl-2 col-6 col-sm-6 col-md-6 col-lg-6 col-xl-4 col-xxl-4 align-self-end" >
+          <img class="img12 img-fluid" src="{{ asset('assets/images/background/person-21.png') }}">
         </div>
         
       </div>
@@ -402,11 +401,9 @@ $(document).ready(function() {
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.0.0/magnific-popup.min.css" integrity="sha512-nIm/JGUwrzblLex/meoxJSPdAKQOe2bLhnrZ81g5Jbh519z8GFJIWu87WAhBH+RAyGbM4+U3S2h+kL5JoV6/wA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 <style type="text/css">
   
-  .imah1 img{
-    
-    height: auto;
-    max-width: 100%;
-    display: none;
+  .img12{
+    height: 100%;
+    width: auto;
   }
 
 
@@ -427,79 +424,19 @@ $(document).ready(function() {
   #programs2 .owl-nav{position: absolute; top: 50%;}
 
 	#popupModal .close {position: absolute; right: -15px; top: -15px; background-color: #340369; color: #fdd100; width: 25px; height: 25px; opacity: 1!important;}
-	.hero-section {padding-top: 2em; padding-bottom: 0; height: 600px;}
+	.hero-section {height:600px; padding-bottom: 0;}
 	.hs-text {padding-top: 0; padding-right: 0;}
 	.hs-text h2 {font-size: 70px; margin-bottom: 0;}
 	.hs-text h3 {font-size: 55px; margin-bottom: 0;}
 	.hs-text p {font-size: 20px; margin-bottom: 0; margin-start: 20px;}
+  .child_sec{height: 600px;}
+  .child{height:600px;}
+  .pare{height: 600px;margin-top: 10px}
+ 
 
-  @media only screen and (min-width:1337px)
-  {
-    .imah1 img{
-    margin-top:240px;
-    display: block;
-    }
-  }
-
-  @media only screen and (min-width:1200px) and (max-width:1336px)
-  {
-    .imah1 img{
-    margin-top:280px;
-    display: block;
-    }
-  }
-
-
-  @media only screen and (min-width:992px) and (max-width:1199px)
-  {
-    .imah1 img{
-    margin-top:320px;
-    display: block;
-    }
-  }
-
-  @media only screen and (min-width: 768px) and (max-width: 991px) {
-    .fontjudul{
-    font-size: 1em;
-    }
-
-  .fontdigital{
-    font-size: 1em;
-    }
-
-  .fonttext{
-    font-size: 1em;
-    }
-
-
-    .imah1 img{
-      margin-top:375px;
-
-      
-      height: auto;
-    }
-}
 
 	@media only screen and (max-width: 767px) {
-    .bgfull{
-      height: 
-    }
-    .fontjudul{
-    font-size: 1em;
-    }
 
-  .fontdigital{
-    font-size: 1em;
-    }
-
-  .fonttext{
-    font-size: 1em;
-    }
-
-  .imah1 img{
-
-    margin-top:5em;
-  }
 
 		.hero-section {padding-top: 5em;}
 		.hs-text {padding-top: 0; margin-bottom: 0;}
@@ -517,14 +454,59 @@ $(document).ready(function() {
 		.hero {height: 450px; margin-top: -50px}
 }
 
-@media only screen and (max-width:576px){
+@media only screen and (min-width: 993px) and (max-width: 1199px) {
+
+  .jud1{margin-top: 70px}
+  .pare{height: 600px;margin-top: 10px}
+  .img12{height: 280px;}
+
+}
+
+ @media only screen and (min-width: 768px) and (max-width: 991px) {
+  .jud1{
+    margin-bottom:0px;
+    margin-top:80px;
+  }  
+  
+  .fontjudul{
+    font-size: 1em;
+    }
+
+  .fontdigital{
+    font-size: 1em;
+    }
+
+  .fonttext{
+    font-size: 1em;
+    }
+
+    .img12{
+      height: 300px;
+    }
+}
 
 
-  .imsama{
-    display: inline-block;
-    margin-top: 15%;
-  }
+@media only screen and (min-width:576px) and (max-width:767px){
+  .child{height:520px;}
 
+  .pare{height: 520px}
+
+  .fontjudul{
+    font-size: 1em;
+    }
+
+  .fontdigital{
+    font-size: 1em;
+    }
+
+  .fonttext{
+    font-size: 1em;
+    }
+}
+
+@media only screen and (max-width:575px){
+  .child_sec{height: 520px}
+  .pare{height: 520px}
 }
 
 	
