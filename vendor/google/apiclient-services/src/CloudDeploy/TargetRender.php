@@ -22,12 +22,64 @@ class TargetRender extends \Google\Model
   /**
    * @var string
    */
+  public $failureCause;
+  /**
+   * @var string
+   */
+  public $failureMessage;
+  protected $metadataType = RenderMetadata::class;
+  protected $metadataDataType = '';
+  /**
+   * @var string
+   */
   public $renderingBuild;
   /**
    * @var string
    */
   public $renderingState;
 
+  /**
+   * @param string
+   */
+  public function setFailureCause($failureCause)
+  {
+    $this->failureCause = $failureCause;
+  }
+  /**
+   * @return string
+   */
+  public function getFailureCause()
+  {
+    return $this->failureCause;
+  }
+  /**
+   * @param string
+   */
+  public function setFailureMessage($failureMessage)
+  {
+    $this->failureMessage = $failureMessage;
+  }
+  /**
+   * @return string
+   */
+  public function getFailureMessage()
+  {
+    return $this->failureMessage;
+  }
+  /**
+   * @param RenderMetadata
+   */
+  public function setMetadata(RenderMetadata $metadata)
+  {
+    $this->metadata = $metadata;
+  }
+  /**
+   * @return RenderMetadata
+   */
+  public function getMetadata()
+  {
+    return $this->metadata;
+  }
   /**
    * @param string
    */

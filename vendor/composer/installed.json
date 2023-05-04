@@ -61,17 +61,17 @@
         },
         {
             "name": "bacon/bacon-qr-code",
-            "version": "2.0.4",
-            "version_normalized": "2.0.4.0",
+            "version": "2.0.8",
+            "version_normalized": "2.0.8.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Bacon/BaconQrCode.git",
-                "reference": "f73543ac4e1def05f1a70bcd1525c8a157a1ad09"
+                "reference": "8674e51bb65af933a5ffaf1c308a660387c35c22"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Bacon/BaconQrCode/zipball/f73543ac4e1def05f1a70bcd1525c8a157a1ad09",
-                "reference": "f73543ac4e1def05f1a70bcd1525c8a157a1ad09",
+                "url": "https://api.github.com/repos/Bacon/BaconQrCode/zipball/8674e51bb65af933a5ffaf1c308a660387c35c22",
+                "reference": "8674e51bb65af933a5ffaf1c308a660387c35c22",
                 "shasum": ""
             },
             "require": {
@@ -80,14 +80,15 @@
                 "php": "^7.1 || ^8.0"
             },
             "require-dev": {
-                "phly/keep-a-changelog": "^1.4",
+                "phly/keep-a-changelog": "^2.1",
                 "phpunit/phpunit": "^7 | ^8 | ^9",
+                "spatie/phpunit-snapshot-assertions": "^4.2.9",
                 "squizlabs/php_codesniffer": "^3.4"
             },
             "suggest": {
                 "ext-imagick": "to generate QR code images"
             },
-            "time": "2021-06-18T13:26:35+00:00",
+            "time": "2022-12-07T17:46:57+00:00",
             "type": "library",
             "installation-source": "dist",
             "autoload": {
@@ -111,7 +112,7 @@
             "homepage": "https://github.com/Bacon/BaconQrCode",
             "support": {
                 "issues": "https://github.com/Bacon/BaconQrCode/issues",
-                "source": "https://github.com/Bacon/BaconQrCode/tree/2.0.4"
+                "source": "https://github.com/Bacon/BaconQrCode/tree/2.0.8"
             },
             "install-path": "../bacon/bacon-qr-code"
         },
@@ -248,70 +249,6 @@
             "install-path": "../brick/math"
         },
         {
-            "name": "campusdatamedia/faturcms",
-            "version": "v4.0.2",
-            "version_normalized": "4.0.2.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/campusdatamedia/faturcms.git",
-                "reference": "2b7333655f0efb36764466376288cb82f11a108b"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/campusdatamedia/faturcms/zipball/2b7333655f0efb36764466376288cb82f11a108b",
-                "reference": "2b7333655f0efb36764466376288cb82f11a108b",
-                "shasum": ""
-            },
-            "require": {
-                "barryvdh/laravel-dompdf": "^0.8.5",
-                "campusdatamedia/faturhelper": "^2.0",
-                "hisorange/browser-detect": "^4.4",
-                "jorenvanhocht/laravel-share": "^4.0",
-                "laravel/ui": "^3.0",
-                "maatwebsite/excel": "^3.1",
-                "nao-pon/flysystem-google-drive": "~1.1",
-                "php": "^7.3",
-                "simplesoftwareio/simple-qrcode": "^4.2",
-                "spatie/laravel-backup": "^6.0",
-                "stevebauman/location": "^6.1",
-                "yajra/laravel-datatables-oracle": "~9.0"
-            },
-            "time": "2022-02-07T06:06:52+00:00",
-            "type": "library",
-            "extra": {
-                "laravel": {
-                    "providers": [
-                        "Ajifatur\\FaturCMS\\FaturCMSServiceProvider"
-                    ]
-                }
-            },
-            "installation-source": "dist",
-            "autoload": {
-                "psr-4": {
-                    "Ajifatur\\FaturCMS\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "ajifatur",
-                    "email": "ajifatur2@gmail.com"
-                },
-                {
-                    "name": "praseetyaa",
-                    "email": "praseetyaa@gmail.com"
-                }
-            ],
-            "description": "Solusi CMS dengan Fitur Referral Terbaik",
-            "support": {
-                "source": "https://github.com/campusdatamedia/faturcms/tree/v4.0.2"
-            },
-            "install-path": "../campusdatamedia/faturcms"
-        },
-        {
             "name": "campusdatamedia/faturhelper",
             "version": "v2.0.2",
             "version_normalized": "2.0.2.0",
@@ -348,18 +285,79 @@
             "install-path": "../campusdatamedia/faturhelper"
         },
         {
-            "name": "composer/ca-bundle",
-            "version": "1.3.1",
-            "version_normalized": "1.3.1.0",
+            "name": "campusdigital/campuscms",
+            "version": "v1.0.1",
+            "version_normalized": "1.0.1.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/composer/ca-bundle.git",
-                "reference": "4c679186f2aca4ab6a0f1b0b9cf9252decb44d0b"
+                "url": "https://github.com/CAMPUSDIGITALID/CampusCMS.git",
+                "reference": "d9a8072ac1d410f1f35bbe3be8d8c84e4ef1afc0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/ca-bundle/zipball/4c679186f2aca4ab6a0f1b0b9cf9252decb44d0b",
-                "reference": "4c679186f2aca4ab6a0f1b0b9cf9252decb44d0b",
+                "url": "https://api.github.com/repos/CAMPUSDIGITALID/CampusCMS/zipball/d9a8072ac1d410f1f35bbe3be8d8c84e4ef1afc0",
+                "reference": "d9a8072ac1d410f1f35bbe3be8d8c84e4ef1afc0",
+                "shasum": ""
+            },
+            "require": {
+                "barryvdh/laravel-dompdf": "^0.8.5",
+                "campusdatamedia/faturhelper": "^2.0",
+                "hisorange/browser-detect": "^4.4",
+                "jorenvanhocht/laravel-share": "^4.0",
+                "laravel/ui": "^3.0",
+                "maatwebsite/excel": "^3.1",
+                "nao-pon/flysystem-google-drive": "~1.1",
+                "php": "^7.3|^8.0",
+                "simplesoftwareio/simple-qrcode": "^4.2",
+                "spatie/laravel-backup": "^6.0",
+                "stevebauman/location": "^6.1",
+                "yajra/laravel-datatables-oracle": "~9.0"
+            },
+            "time": "2023-05-03T02:56:08+00:00",
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Campusdigital\\CampusCMS\\FaturCMSServiceProvider"
+                    ]
+                }
+            },
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "Campusdigital\\CampusCMS\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "wahana",
+                    "email": "alfinsihab1@gmail.com"
+                }
+            ],
+            "description": "Pengembangan ulang dari FaturCMS",
+            "support": {
+                "issues": "https://github.com/CAMPUSDIGITALID/CampusCMS/issues",
+                "source": "https://github.com/CAMPUSDIGITALID/CampusCMS/tree/v1.0.1"
+            },
+            "install-path": "../campusdigital/campuscms"
+        },
+        {
+            "name": "composer/ca-bundle",
+            "version": "1.3.5",
+            "version_normalized": "1.3.5.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/composer/ca-bundle.git",
+                "reference": "74780ccf8c19d6acb8d65c5f39cd72110e132bbd"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/composer/ca-bundle/zipball/74780ccf8c19d6acb8d65c5f39cd72110e132bbd",
+                "reference": "74780ccf8c19d6acb8d65c5f39cd72110e132bbd",
                 "shasum": ""
             },
             "require": {
@@ -373,7 +371,7 @@
                 "symfony/phpunit-bridge": "^4.2 || ^5",
                 "symfony/process": "^2.5 || ^3.0 || ^4.0 || ^5.0 || ^6.0"
             },
-            "time": "2021-10-28T20:44:15+00:00",
+            "time": "2023-01-11T08:27:00+00:00",
             "type": "library",
             "extra": {
                 "branch-alias": {
@@ -408,7 +406,7 @@
             "support": {
                 "irc": "irc://irc.freenode.org/composer",
                 "issues": "https://github.com/composer/ca-bundle/issues",
-                "source": "https://github.com/composer/ca-bundle/tree/1.3.1"
+                "source": "https://github.com/composer/ca-bundle/tree/1.3.5"
             },
             "funding": [
                 {
@@ -427,25 +425,112 @@
             "install-path": "./ca-bundle"
         },
         {
-            "name": "dasprid/enum",
-            "version": "1.0.3",
-            "version_normalized": "1.0.3.0",
+            "name": "composer/semver",
+            "version": "3.3.2",
+            "version_normalized": "3.3.2.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/DASPRiD/Enum.git",
-                "reference": "5abf82f213618696dda8e3bf6f64dd042d8542b2"
+                "url": "https://github.com/composer/semver.git",
+                "reference": "3953f23262f2bff1919fc82183ad9acb13ff62c9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/DASPRiD/Enum/zipball/5abf82f213618696dda8e3bf6f64dd042d8542b2",
-                "reference": "5abf82f213618696dda8e3bf6f64dd042d8542b2",
+                "url": "https://api.github.com/repos/composer/semver/zipball/3953f23262f2bff1919fc82183ad9acb13ff62c9",
+                "reference": "3953f23262f2bff1919fc82183ad9acb13ff62c9",
                 "shasum": ""
+            },
+            "require": {
+                "php": "^5.3.2 || ^7.0 || ^8.0"
+            },
+            "require-dev": {
+                "phpstan/phpstan": "^1.4",
+                "symfony/phpunit-bridge": "^4.2 || ^5"
+            },
+            "time": "2022-04-01T19:23:25+00:00",
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-main": "3.x-dev"
+                }
+            },
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "Composer\\Semver\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Nils Adermann",
+                    "email": "naderman@naderman.de",
+                    "homepage": "http://www.naderman.de"
+                },
+                {
+                    "name": "Jordi Boggiano",
+                    "email": "j.boggiano@seld.be",
+                    "homepage": "http://seld.be"
+                },
+                {
+                    "name": "Rob Bast",
+                    "email": "rob.bast@gmail.com",
+                    "homepage": "http://robbast.nl"
+                }
+            ],
+            "description": "Semver library that offers utilities, version constraint parsing and validation.",
+            "keywords": [
+                "semantic",
+                "semver",
+                "validation",
+                "versioning"
+            ],
+            "support": {
+                "irc": "irc://irc.freenode.org/composer",
+                "issues": "https://github.com/composer/semver/issues",
+                "source": "https://github.com/composer/semver/tree/3.3.2"
+            },
+            "funding": [
+                {
+                    "url": "https://packagist.com",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/composer",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/composer/composer",
+                    "type": "tidelift"
+                }
+            ],
+            "install-path": "./semver"
+        },
+        {
+            "name": "dasprid/enum",
+            "version": "1.0.4",
+            "version_normalized": "1.0.4.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/DASPRiD/Enum.git",
+                "reference": "8e6b6ea76eabbf19ea2bf5b67b98e1860474012f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/DASPRiD/Enum/zipball/8e6b6ea76eabbf19ea2bf5b67b98e1860474012f",
+                "reference": "8e6b6ea76eabbf19ea2bf5b67b98e1860474012f",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.1 <9.0"
             },
             "require-dev": {
                 "phpunit/phpunit": "^7 | ^8 | ^9",
-                "squizlabs/php_codesniffer": "^3.4"
+                "squizlabs/php_codesniffer": "*"
             },
-            "time": "2020-10-02T16:03:48+00:00",
+            "time": "2023-03-01T18:44:03+00:00",
             "type": "library",
             "installation-source": "dist",
             "autoload": {
@@ -472,7 +557,7 @@
             ],
             "support": {
                 "issues": "https://github.com/DASPRiD/Enum/issues",
-                "source": "https://github.com/DASPRiD/Enum/tree/1.0.3"
+                "source": "https://github.com/DASPRiD/Enum/tree/1.0.4"
             },
             "install-path": "../dasprid/enum"
         },
@@ -1015,35 +1100,42 @@
         },
         {
             "name": "ezyang/htmlpurifier",
-            "version": "v4.13.0",
-            "version_normalized": "4.13.0.0",
+            "version": "v4.16.0",
+            "version_normalized": "4.16.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ezyang/htmlpurifier.git",
-                "reference": "08e27c97e4c6ed02f37c5b2b20488046c8d90d75"
+                "reference": "523407fb06eb9e5f3d59889b3978d5bfe94299c8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ezyang/htmlpurifier/zipball/08e27c97e4c6ed02f37c5b2b20488046c8d90d75",
-                "reference": "08e27c97e4c6ed02f37c5b2b20488046c8d90d75",
+                "url": "https://api.github.com/repos/ezyang/htmlpurifier/zipball/523407fb06eb9e5f3d59889b3978d5bfe94299c8",
+                "reference": "523407fb06eb9e5f3d59889b3978d5bfe94299c8",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.2"
+                "php": "~5.6.0 || ~7.0.0 || ~7.1.0 || ~7.2.0 || ~7.3.0 || ~7.4.0 || ~8.0.0 || ~8.1.0 || ~8.2.0"
             },
             "require-dev": {
-                "simpletest/simpletest": "dev-master#72de02a7b80c6bb8864ef9bf66d41d2f58f826bd"
+                "cerdic/css-tidy": "^1.7 || ^2.0",
+                "simpletest/simpletest": "dev-master"
             },
-            "time": "2020-06-29T00:56:53+00:00",
+            "suggest": {
+                "cerdic/css-tidy": "If you want to use the filter 'Filter.ExtractStyleBlocks'.",
+                "ext-bcmath": "Used for unit conversion and imagecrash protection",
+                "ext-iconv": "Converts text to and from non-UTF-8 encodings",
+                "ext-tidy": "Used for pretty-printing HTML"
+            },
+            "time": "2022-09-18T07:06:19+00:00",
             "type": "library",
             "installation-source": "dist",
             "autoload": {
-                "psr-0": {
-                    "HTMLPurifier": "library/"
-                },
                 "files": [
                     "library/HTMLPurifier.composer.php"
                 ],
+                "psr-0": {
+                    "HTMLPurifier": "library/"
+                },
                 "exclude-from-classmap": [
                     "/library/HTMLPurifier/Language/"
                 ]
@@ -1066,7 +1158,7 @@
             ],
             "support": {
                 "issues": "https://github.com/ezyang/htmlpurifier/issues",
-                "source": "https://github.com/ezyang/htmlpurifier/tree/master"
+                "source": "https://github.com/ezyang/htmlpurifier/tree/v4.16.0"
             },
             "install-path": "../ezyang/htmlpurifier"
         },
@@ -1621,17 +1713,17 @@
         },
         {
             "name": "geoip2/geoip2",
-            "version": "v2.12.2",
-            "version_normalized": "2.12.2.0",
+            "version": "v2.13.0",
+            "version_normalized": "2.13.0.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/maxmind/GeoIP2-php.git",
-                "reference": "83adb44ac4b9553d36b579a14673ed124583082f"
+                "url": "git@github.com:maxmind/GeoIP2-php.git",
+                "reference": "6a41d8fbd6b90052bc34dff3b4252d0f88067b23"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/maxmind/GeoIP2-php/zipball/83adb44ac4b9553d36b579a14673ed124583082f",
-                "reference": "83adb44ac4b9553d36b579a14673ed124583082f",
+                "url": "https://api.github.com/repos/maxmind/GeoIP2-php/zipball/6a41d8fbd6b90052bc34dff3b4252d0f88067b23",
+                "reference": "6a41d8fbd6b90052bc34dff3b4252d0f88067b23",
                 "shasum": ""
             },
             "require": {
@@ -1646,7 +1738,7 @@
                 "phpunit/phpunit": "^8.0 || ^9.0",
                 "squizlabs/php_codesniffer": "3.*"
             },
-            "time": "2021-11-30T18:15:25+00:00",
+            "time": "2022-08-05T20:32:58+00:00",
             "type": "library",
             "installation-source": "dist",
             "autoload": {
@@ -1674,10 +1766,6 @@
                 "geolocation",
                 "maxmind"
             ],
-            "support": {
-                "issues": "https://github.com/maxmind/GeoIP2-php/issues",
-                "source": "https://github.com/maxmind/GeoIP2-php/tree/v2.12.2"
-            },
             "install-path": "../geoip2/geoip2"
         },
         {
@@ -1729,12 +1817,12 @@
             },
             "installation-source": "dist",
             "autoload": {
-                "psr-4": {
-                    "Google\\": "src/"
-                },
                 "files": [
                     "src/aliases.php"
                 ],
+                "psr-4": {
+                    "Google\\": "src/"
+                },
                 "classmap": [
                     "src/aliases.php"
                 ]
@@ -1756,17 +1844,17 @@
         },
         {
             "name": "google/apiclient-services",
-            "version": "v0.225.0",
-            "version_normalized": "0.225.0.0",
+            "version": "v0.298.0",
+            "version_normalized": "0.298.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/googleapis/google-api-php-client-services.git",
-                "reference": "0e2387a7c082fc05d62555952391791db8c55435"
+                "reference": "68710abd2b921f5df4ae99412fc05bac268acddc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/googleapis/google-api-php-client-services/zipball/0e2387a7c082fc05d62555952391791db8c55435",
-                "reference": "0e2387a7c082fc05d62555952391791db8c55435",
+                "url": "https://api.github.com/repos/googleapis/google-api-php-client-services/zipball/68710abd2b921f5df4ae99412fc05bac268acddc",
+                "reference": "68710abd2b921f5df4ae99412fc05bac268acddc",
                 "shasum": ""
             },
             "require": {
@@ -1775,16 +1863,16 @@
             "require-dev": {
                 "phpunit/phpunit": "^5.7||^8.5.13"
             },
-            "time": "2021-12-12T12:24:34+00:00",
+            "time": "2023-05-01T01:06:14+00:00",
             "type": "library",
             "installation-source": "dist",
             "autoload": {
-                "psr-4": {
-                    "Google\\Service\\": "src"
-                },
                 "files": [
                     "autoload.php"
-                ]
+                ],
+                "psr-4": {
+                    "Google\\Service\\": "src"
+                }
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
@@ -1797,44 +1885,46 @@
             ],
             "support": {
                 "issues": "https://github.com/googleapis/google-api-php-client-services/issues",
-                "source": "https://github.com/googleapis/google-api-php-client-services/tree/v0.225.0"
+                "source": "https://github.com/googleapis/google-api-php-client-services/tree/v0.298.0"
             },
             "install-path": "../google/apiclient-services"
         },
         {
             "name": "google/auth",
-            "version": "v1.18.0",
-            "version_normalized": "1.18.0.0",
+            "version": "v1.26.0",
+            "version_normalized": "1.26.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/googleapis/google-auth-library-php.git",
-                "reference": "21dd478e77b0634ed9e3a68613f74ed250ca9347"
+                "reference": "f1f0d0319e2e7750ebfaa523c78819792a9ed9f7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/googleapis/google-auth-library-php/zipball/21dd478e77b0634ed9e3a68613f74ed250ca9347",
-                "reference": "21dd478e77b0634ed9e3a68613f74ed250ca9347",
+                "url": "https://api.github.com/repos/googleapis/google-auth-library-php/zipball/f1f0d0319e2e7750ebfaa523c78819792a9ed9f7",
+                "reference": "f1f0d0319e2e7750ebfaa523c78819792a9ed9f7",
                 "shasum": ""
             },
             "require": {
-                "firebase/php-jwt": "~2.0|~3.0|~4.0|~5.0",
-                "guzzlehttp/guzzle": "^5.3.1|^6.2.1|^7.0",
+                "firebase/php-jwt": "^5.5||^6.0",
+                "guzzlehttp/guzzle": "^6.2.1|^7.0",
                 "guzzlehttp/psr7": "^1.7|^2.0",
-                "php": ">=5.4",
-                "psr/cache": "^1.0|^2.0",
+                "php": "^7.1||^8.0",
+                "psr/cache": "^1.0|^2.0|^3.0",
                 "psr/http-message": "^1.0"
             },
             "require-dev": {
                 "guzzlehttp/promises": "0.1.1|^1.3",
-                "kelvinmo/simplejwt": "^0.2.5|^0.5.1",
-                "phpseclib/phpseclib": "^2.0.31",
-                "phpunit/phpunit": "^4.8.36|^5.7",
-                "sebastian/comparator": ">=1.2.3"
+                "kelvinmo/simplejwt": "0.7.0",
+                "phpseclib/phpseclib": "^2.0.31||^3.0",
+                "phpspec/prophecy-phpunit": "^1.1||^2.0",
+                "phpunit/phpunit": "^7.5||^9.0.0",
+                "sebastian/comparator": ">=1.2.3",
+                "squizlabs/php_codesniffer": "^3.5"
             },
             "suggest": {
                 "phpseclib/phpseclib": "May be used in place of OpenSSL for signing strings or for token management. Please require version ^2."
             },
-            "time": "2021-08-24T18:03:18+00:00",
+            "time": "2023-04-05T15:11:57+00:00",
             "type": "library",
             "installation-source": "dist",
             "autoload": {
@@ -1854,9 +1944,9 @@
                 "oauth2"
             ],
             "support": {
-                "docs": "https://googleapis.github.io/google-auth-library-php/master/",
+                "docs": "https://googleapis.github.io/google-auth-library-php/main/",
                 "issues": "https://github.com/googleapis/google-auth-library-php/issues",
-                "source": "https://github.com/googleapis/google-auth-library-php/tree/v1.18.0"
+                "source": "https://github.com/googleapis/google-auth-library-php/tree/v1.26.0"
             },
             "install-path": "../google/auth"
         },
@@ -2313,35 +2403,35 @@
         },
         {
             "name": "hisorange/browser-detect",
-            "version": "4.4.1",
-            "version_normalized": "4.4.1.0",
+            "version": "4.5.4",
+            "version_normalized": "4.5.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/hisorange/browser-detect.git",
-                "reference": "c36da007d43f310e49506ac47b7fd1fd4cd77611"
+                "reference": "2a7c2b140209aa8477424614eb3aa6f7a7b9f429"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/hisorange/browser-detect/zipball/c36da007d43f310e49506ac47b7fd1fd4cd77611",
-                "reference": "c36da007d43f310e49506ac47b7fd1fd4cd77611",
+                "url": "https://api.github.com/repos/hisorange/browser-detect/zipball/2a7c2b140209aa8477424614eb3aa6f7a7b9f429",
+                "reference": "2a7c2b140209aa8477424614eb3aa6f7a7b9f429",
                 "shasum": ""
             },
             "require": {
                 "jaybizzle/crawler-detect": "~1.2",
                 "league/pipeline": "^1.0",
-                "matomo/device-detector": "^4.0",
+                "matomo/device-detector": "^4.0 || ^5.0 || ^6.0",
                 "mobiledetect/mobiledetectlib": "~2.8",
                 "php": "^7.2 || ^8.0",
                 "ua-parser/uap-php": "~3.9"
             },
             "require-dev": {
-                "orchestra/testbench": "~4.0 || ~5.0 || ~6.0",
+                "orchestra/testbench": "~4.0 || ~5.0 || ~6.0 || ~7.0",
                 "php-coveralls/php-coveralls": "~1.0 || ~2.0",
                 "phpstan/phpstan": "^0.12.11",
                 "phpunit/phpunit": "~5.0 || ~6.0 || ~7.0 || ~8.0 || ~9.0",
                 "squizlabs/php_codesniffer": "^3.5"
             },
-            "time": "2021-11-02T16:36:05+00:00",
+            "time": "2022-11-10T01:43:55+00:00",
             "type": "library",
             "extra": {
                 "laravel": {
@@ -2372,35 +2462,36 @@
             "description": "Browser & Mobile detection package for Laravel.",
             "homepage": "https://github.com/hisorange/browser-detect",
             "keywords": [
-                "analyize",
+                "analyse",
                 "browser",
                 "detect",
                 "hisorange",
                 "laravel",
                 "mobile",
+                "php",
                 "tablet",
                 "user agent",
                 "user-agent"
             ],
             "support": {
                 "issues": "https://github.com/hisorange/browser-detect/issues",
-                "source": "https://github.com/hisorange/browser-detect/tree/4.4.1"
+                "source": "https://github.com/hisorange/browser-detect/tree/4.5.4"
             },
             "install-path": "../hisorange/browser-detect"
         },
         {
             "name": "jaybizzle/crawler-detect",
-            "version": "v1.2.110",
-            "version_normalized": "1.2.110.0",
+            "version": "v1.2.114",
+            "version_normalized": "1.2.114.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/JayBizzle/Crawler-Detect.git",
-                "reference": "f9d63a3581428fd8a3858e161d072f0b9debc26f"
+                "reference": "62d0e6b38f6715c673e156ffb0fc894791de3452"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/JayBizzle/Crawler-Detect/zipball/f9d63a3581428fd8a3858e161d072f0b9debc26f",
-                "reference": "f9d63a3581428fd8a3858e161d072f0b9debc26f",
+                "url": "https://api.github.com/repos/JayBizzle/Crawler-Detect/zipball/62d0e6b38f6715c673e156ffb0fc894791de3452",
+                "reference": "62d0e6b38f6715c673e156ffb0fc894791de3452",
                 "shasum": ""
             },
             "require": {
@@ -2409,7 +2500,7 @@
             "require-dev": {
                 "phpunit/phpunit": "^4.8|^5.5|^6.5|^9.4"
             },
-            "time": "2021-12-07T18:35:06+00:00",
+            "time": "2023-03-21T21:54:27+00:00",
             "type": "library",
             "installation-source": "dist",
             "autoload": {
@@ -2439,33 +2530,33 @@
             ],
             "support": {
                 "issues": "https://github.com/JayBizzle/Crawler-Detect/issues",
-                "source": "https://github.com/JayBizzle/Crawler-Detect/tree/v1.2.110"
+                "source": "https://github.com/JayBizzle/Crawler-Detect/tree/v1.2.114"
             },
             "install-path": "../jaybizzle/crawler-detect"
         },
         {
             "name": "jorenvanhocht/laravel-share",
-            "version": "4.1.0",
-            "version_normalized": "4.1.0.0",
+            "version": "4.2.0",
+            "version_normalized": "4.2.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/jorenvh/laravel-share.git",
-                "reference": "9ad09ee5f65a64cf993169636366d9fa0b6a993c"
+                "reference": "86af334068038a840567ed62f2082fe3ac981476"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/jorenvh/laravel-share/zipball/9ad09ee5f65a64cf993169636366d9fa0b6a993c",
-                "reference": "9ad09ee5f65a64cf993169636366d9fa0b6a993c",
+                "url": "https://api.github.com/repos/jorenvh/laravel-share/zipball/86af334068038a840567ed62f2082fe3ac981476",
+                "reference": "86af334068038a840567ed62f2082fe3ac981476",
                 "shasum": ""
             },
             "require": {
-                "php": ">=7.3"
+                "php": "^7.4|^8.0"
             },
             "require-dev": {
-                "orchestra/testbench": "~6.7",
-                "phpunit/phpunit": "9.4.*"
+                "orchestra/testbench": "^6.13|^7.0",
+                "phpunit/phpunit": "^9.3"
             },
-            "time": "2021-08-09T18:48:08+00:00",
+            "time": "2022-02-11T17:20:09+00:00",
             "type": "library",
             "extra": {
                 "laravel": {
@@ -2505,7 +2596,7 @@
             ],
             "support": {
                 "issues": "https://github.com/jorenvh/laravel-share/issues",
-                "source": "https://github.com/jorenvh/laravel-share/tree/4.1.0"
+                "source": "https://github.com/jorenvh/laravel-share/tree/4.2.0"
             },
             "install-path": "../jorenvanhocht/laravel-share"
         },
@@ -2815,34 +2906,34 @@
         },
         {
             "name": "laravel/socialite",
-            "version": "v5.2.6",
-            "version_normalized": "5.2.6.0",
+            "version": "v5.6.1",
+            "version_normalized": "5.6.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/socialite.git",
-                "reference": "b5c67f187ddcf15529ff7217fa735b132620dfac"
+                "reference": "a14a177f2cc71d8add71e2b19e00800e83bdda09"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/socialite/zipball/b5c67f187ddcf15529ff7217fa735b132620dfac",
-                "reference": "b5c67f187ddcf15529ff7217fa735b132620dfac",
+                "url": "https://api.github.com/repos/laravel/socialite/zipball/a14a177f2cc71d8add71e2b19e00800e83bdda09",
+                "reference": "a14a177f2cc71d8add71e2b19e00800e83bdda09",
                 "shasum": ""
             },
             "require": {
                 "ext-json": "*",
                 "guzzlehttp/guzzle": "^6.0|^7.0",
-                "illuminate/http": "^6.0|^7.0|^8.0",
-                "illuminate/support": "^6.0|^7.0|^8.0",
-                "league/oauth1-client": "^1.0",
+                "illuminate/contracts": "^6.0|^7.0|^8.0|^9.0|^10.0",
+                "illuminate/http": "^6.0|^7.0|^8.0|^9.0|^10.0",
+                "illuminate/support": "^6.0|^7.0|^8.0|^9.0|^10.0",
+                "league/oauth1-client": "^1.10.1",
                 "php": "^7.2|^8.0"
             },
             "require-dev": {
-                "illuminate/contracts": "^6.0|^7.0",
                 "mockery/mockery": "^1.0",
-                "orchestra/testbench": "^4.0|^5.0|^6.0",
+                "orchestra/testbench": "^4.0|^5.0|^6.0|^7.0|^8.0",
                 "phpunit/phpunit": "^8.0|^9.3"
             },
-            "time": "2021-12-07T16:32:57+00:00",
+            "time": "2023-01-20T15:42:35+00:00",
             "type": "library",
             "extra": {
                 "branch-alias": {
@@ -2958,17 +3049,17 @@
         },
         {
             "name": "laravel/ui",
-            "version": "v3.4.0",
-            "version_normalized": "3.4.0.0",
+            "version": "v3.4.2",
+            "version_normalized": "3.4.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/ui.git",
-                "reference": "b3e804559bf3973ecca160a4ae1068e6c7c167c6"
+                "reference": "e01198123f7f4369d13c1f83a897c3f5e97fc9f4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/ui/zipball/b3e804559bf3973ecca160a4ae1068e6c7c167c6",
-                "reference": "b3e804559bf3973ecca160a4ae1068e6c7c167c6",
+                "url": "https://api.github.com/repos/laravel/ui/zipball/e01198123f7f4369d13c1f83a897c3f5e97fc9f4",
+                "reference": "e01198123f7f4369d13c1f83a897c3f5e97fc9f4",
                 "shasum": ""
             },
             "require": {
@@ -2981,7 +3072,7 @@
             "require-dev": {
                 "orchestra/testbench": "^6.23|^7.0"
             },
-            "time": "2021-11-30T16:22:00+00:00",
+            "time": "2022-01-25T20:15:56+00:00",
             "type": "library",
             "extra": {
                 "branch-alias": {
@@ -3016,7 +3107,7 @@
                 "ui"
             ],
             "support": {
-                "source": "https://github.com/laravel/ui/tree/v3.4.0"
+                "source": "https://github.com/laravel/ui/tree/v3.4.2"
             },
             "install-path": "../laravel/ui"
         },
@@ -3423,17 +3514,17 @@
         },
         {
             "name": "league/oauth1-client",
-            "version": "v1.10.0",
-            "version_normalized": "1.10.0.0",
+            "version": "v1.10.1",
+            "version_normalized": "1.10.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/thephpleague/oauth1-client.git",
-                "reference": "88dd16b0cff68eb9167bfc849707d2c40ad91ddc"
+                "reference": "d6365b901b5c287dd41f143033315e2f777e1167"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/thephpleague/oauth1-client/zipball/88dd16b0cff68eb9167bfc849707d2c40ad91ddc",
-                "reference": "88dd16b0cff68eb9167bfc849707d2c40ad91ddc",
+                "url": "https://api.github.com/repos/thephpleague/oauth1-client/zipball/d6365b901b5c287dd41f143033315e2f777e1167",
+                "reference": "d6365b901b5c287dd41f143033315e2f777e1167",
                 "shasum": ""
             },
             "require": {
@@ -3453,7 +3544,7 @@
             "suggest": {
                 "ext-simplexml": "For decoding XML-based responses."
             },
-            "time": "2021-08-15T23:05:49+00:00",
+            "time": "2022-04-15T14:02:14+00:00",
             "type": "library",
             "extra": {
                 "branch-alias": {
@@ -3496,7 +3587,7 @@
             ],
             "support": {
                 "issues": "https://github.com/thephpleague/oauth1-client/issues",
-                "source": "https://github.com/thephpleague/oauth1-client/tree/v1.10.0"
+                "source": "https://github.com/thephpleague/oauth1-client/tree/v1.10.1"
             },
             "install-path": "../league/oauth1-client"
         },
@@ -3562,30 +3653,32 @@
         },
         {
             "name": "maatwebsite/excel",
-            "version": "3.1.34",
-            "version_normalized": "3.1.34.0",
+            "version": "3.1.48",
+            "version_normalized": "3.1.48.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/SpartnerNL/Laravel-Excel.git",
-                "reference": "d7446f0e808d83be128835c4b403c9e4a65b20f3"
+                "reference": "6d0fe2a1d195960c7af7bf0de760582da02a34b9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/SpartnerNL/Laravel-Excel/zipball/d7446f0e808d83be128835c4b403c9e4a65b20f3",
-                "reference": "d7446f0e808d83be128835c4b403c9e4a65b20f3",
+                "url": "https://api.github.com/repos/SpartnerNL/Laravel-Excel/zipball/6d0fe2a1d195960c7af7bf0de760582da02a34b9",
+                "reference": "6d0fe2a1d195960c7af7bf0de760582da02a34b9",
                 "shasum": ""
             },
             "require": {
+                "composer/semver": "^3.3",
                 "ext-json": "*",
-                "illuminate/support": "5.8.*|^6.0|^7.0|^8.0",
+                "illuminate/support": "5.8.*|^6.0|^7.0|^8.0|^9.0|^10.0",
                 "php": "^7.0|^8.0",
-                "phpoffice/phpspreadsheet": "^1.18"
+                "phpoffice/phpspreadsheet": "^1.18",
+                "psr/simple-cache": "^1.0|^2.0|^3.0"
             },
             "require-dev": {
-                "orchestra/testbench": "^6.0",
+                "orchestra/testbench": "^6.0|^7.0|^8.0",
                 "predis/predis": "^1.1"
             },
-            "time": "2021-12-02T16:17:16+00:00",
+            "time": "2023-02-22T21:01:38+00:00",
             "type": "library",
             "extra": {
                 "laravel": {
@@ -3627,7 +3720,7 @@
             ],
             "support": {
                 "issues": "https://github.com/SpartnerNL/Laravel-Excel/issues",
-                "source": "https://github.com/SpartnerNL/Laravel-Excel/tree/3.1.34"
+                "source": "https://github.com/SpartnerNL/Laravel-Excel/tree/3.1.48"
             },
             "funding": [
                 {
@@ -3643,32 +3736,35 @@
         },
         {
             "name": "maennchen/zipstream-php",
-            "version": "2.1.0",
-            "version_normalized": "2.1.0.0",
+            "version": "2.2.6",
+            "version_normalized": "2.2.6.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/maennchen/ZipStream-PHP.git",
-                "reference": "c4c5803cc1f93df3d2448478ef79394a5981cc58"
+                "reference": "30ad6f93cf3efe4192bc7a4c9cad11ff8f4f237f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/maennchen/ZipStream-PHP/zipball/c4c5803cc1f93df3d2448478ef79394a5981cc58",
-                "reference": "c4c5803cc1f93df3d2448478ef79394a5981cc58",
+                "url": "https://api.github.com/repos/maennchen/ZipStream-PHP/zipball/30ad6f93cf3efe4192bc7a4c9cad11ff8f4f237f",
+                "reference": "30ad6f93cf3efe4192bc7a4c9cad11ff8f4f237f",
                 "shasum": ""
             },
             "require": {
                 "myclabs/php-enum": "^1.5",
-                "php": ">= 7.1",
+                "php": "^7.4 || ^8.0",
                 "psr/http-message": "^1.0",
                 "symfony/polyfill-mbstring": "^1.0"
             },
             "require-dev": {
                 "ext-zip": "*",
-                "guzzlehttp/guzzle": ">= 6.3",
+                "friendsofphp/php-cs-fixer": "^3.9",
+                "guzzlehttp/guzzle": "^6.5.3 || ^7.2.0",
                 "mikey179/vfsstream": "^1.6",
-                "phpunit/phpunit": ">= 7.5"
+                "php-coveralls/php-coveralls": "^2.4",
+                "phpunit/phpunit": "^8.5.8 || ^9.4.2",
+                "vimeo/psalm": "^4.1"
             },
-            "time": "2020-05-30T13:11:16+00:00",
+            "time": "2022-11-25T18:57:19+00:00",
             "type": "library",
             "installation-source": "dist",
             "autoload": {
@@ -3705,9 +3801,13 @@
             ],
             "support": {
                 "issues": "https://github.com/maennchen/ZipStream-PHP/issues",
-                "source": "https://github.com/maennchen/ZipStream-PHP/tree/master"
+                "source": "https://github.com/maennchen/ZipStream-PHP/tree/2.2.6"
             },
             "funding": [
+                {
+                    "url": "https://github.com/maennchen",
+                    "type": "github"
+                },
                 {
                     "url": "https://opencollective.com/zipstream",
                     "type": "open_collective"
@@ -3717,29 +3817,29 @@
         },
         {
             "name": "markbaker/complex",
-            "version": "3.0.1",
-            "version_normalized": "3.0.1.0",
+            "version": "3.0.2",
+            "version_normalized": "3.0.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/MarkBaker/PHPComplex.git",
-                "reference": "ab8bc271e404909db09ff2d5ffa1e538085c0f22"
+                "reference": "95c56caa1cf5c766ad6d65b6344b807c1e8405b9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/MarkBaker/PHPComplex/zipball/ab8bc271e404909db09ff2d5ffa1e538085c0f22",
-                "reference": "ab8bc271e404909db09ff2d5ffa1e538085c0f22",
+                "url": "https://api.github.com/repos/MarkBaker/PHPComplex/zipball/95c56caa1cf5c766ad6d65b6344b807c1e8405b9",
+                "reference": "95c56caa1cf5c766ad6d65b6344b807c1e8405b9",
                 "shasum": ""
             },
             "require": {
                 "php": "^7.2 || ^8.0"
             },
             "require-dev": {
-                "dealerdirect/phpcodesniffer-composer-installer": "^0.7.0",
-                "phpcompatibility/php-compatibility": "^9.0",
-                "phpunit/phpunit": "^7.0 || ^8.0 || ^9.3",
-                "squizlabs/php_codesniffer": "^3.4"
+                "dealerdirect/phpcodesniffer-composer-installer": "dev-master",
+                "phpcompatibility/php-compatibility": "^9.3",
+                "phpunit/phpunit": "^7.0 || ^8.0 || ^9.0",
+                "squizlabs/php_codesniffer": "^3.7"
             },
-            "time": "2021-06-29T15:32:53+00:00",
+            "time": "2022-12-06T16:21:08+00:00",
             "type": "library",
             "installation-source": "dist",
             "autoload": {
@@ -3765,39 +3865,39 @@
             ],
             "support": {
                 "issues": "https://github.com/MarkBaker/PHPComplex/issues",
-                "source": "https://github.com/MarkBaker/PHPComplex/tree/3.0.1"
+                "source": "https://github.com/MarkBaker/PHPComplex/tree/3.0.2"
             },
             "install-path": "../markbaker/complex"
         },
         {
             "name": "markbaker/matrix",
-            "version": "3.0.0",
-            "version_normalized": "3.0.0.0",
+            "version": "3.0.1",
+            "version_normalized": "3.0.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/MarkBaker/PHPMatrix.git",
-                "reference": "c66aefcafb4f6c269510e9ac46b82619a904c576"
+                "reference": "728434227fe21be27ff6d86621a1b13107a2562c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/MarkBaker/PHPMatrix/zipball/c66aefcafb4f6c269510e9ac46b82619a904c576",
-                "reference": "c66aefcafb4f6c269510e9ac46b82619a904c576",
+                "url": "https://api.github.com/repos/MarkBaker/PHPMatrix/zipball/728434227fe21be27ff6d86621a1b13107a2562c",
+                "reference": "728434227fe21be27ff6d86621a1b13107a2562c",
                 "shasum": ""
             },
             "require": {
                 "php": "^7.1 || ^8.0"
             },
             "require-dev": {
-                "dealerdirect/phpcodesniffer-composer-installer": "^0.7.0",
-                "phpcompatibility/php-compatibility": "^9.0",
+                "dealerdirect/phpcodesniffer-composer-installer": "dev-master",
+                "phpcompatibility/php-compatibility": "^9.3",
                 "phpdocumentor/phpdocumentor": "2.*",
                 "phploc/phploc": "^4.0",
                 "phpmd/phpmd": "2.*",
-                "phpunit/phpunit": "^7.0 || ^8.0 || ^9.3",
+                "phpunit/phpunit": "^7.0 || ^8.0 || ^9.0",
                 "sebastian/phpcpd": "^4.0",
-                "squizlabs/php_codesniffer": "^3.4"
+                "squizlabs/php_codesniffer": "^3.7"
             },
-            "time": "2021-07-01T19:01:15+00:00",
+            "time": "2022-12-02T22:17:43+00:00",
             "type": "library",
             "installation-source": "dist",
             "autoload": {
@@ -3824,35 +3924,35 @@
             ],
             "support": {
                 "issues": "https://github.com/MarkBaker/PHPMatrix/issues",
-                "source": "https://github.com/MarkBaker/PHPMatrix/tree/3.0.0"
+                "source": "https://github.com/MarkBaker/PHPMatrix/tree/3.0.1"
             },
             "install-path": "../markbaker/matrix"
         },
         {
             "name": "matomo/device-detector",
-            "version": "4.3.1",
-            "version_normalized": "4.3.1.0",
+            "version": "6.1.1",
+            "version_normalized": "6.1.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/matomo-org/device-detector.git",
-                "reference": "88e5419ee1448ccb9537e287dd09836ff9d2de3b"
+                "reference": "a549e24350ff63e15dc691b6b21b73909b4fa9bd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/matomo-org/device-detector/zipball/88e5419ee1448ccb9537e287dd09836ff9d2de3b",
-                "reference": "88e5419ee1448ccb9537e287dd09836ff9d2de3b",
+                "url": "https://api.github.com/repos/matomo-org/device-detector/zipball/a549e24350ff63e15dc691b6b21b73909b4fa9bd",
+                "reference": "a549e24350ff63e15dc691b6b21b73909b4fa9bd",
                 "shasum": ""
             },
             "require": {
                 "mustangostang/spyc": "*",
-                "php": ">=7.2"
+                "php": "^7.2|^8.0"
             },
             "replace": {
                 "piwik/device-detector": "self.version"
             },
             "require-dev": {
                 "matthiasmullie/scrapbook": "^1.4.7",
-                "mayflower/mo4-coding-standard": "dev-master#275cb9d",
+                "mayflower/mo4-coding-standard": "^v8.0.0",
                 "phpstan/phpstan": "^0.12.52",
                 "phpunit/phpunit": "^8.5.8",
                 "psr/cache": "^1.0.1",
@@ -3863,7 +3963,7 @@
                 "doctrine/cache": "Can directly be used for caching purpose",
                 "ext-yaml": "Necessary for using the Pecl YAML parser"
             },
-            "time": "2021-09-20T12:34:12+00:00",
+            "time": "2023-03-16T08:19:16+00:00",
             "type": "library",
             "installation-source": "dist",
             "autoload": {
@@ -3970,17 +4070,17 @@
         },
         {
             "name": "maxmind/web-service-common",
-            "version": "v0.8.1",
-            "version_normalized": "0.8.1.0",
+            "version": "v0.9.0",
+            "version_normalized": "0.9.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/maxmind/web-service-common-php.git",
-                "reference": "32f274051c543fc865e5a84d3a2c703913641ea8"
+                "reference": "4dc5a3e8df38aea4ca3b1096cee3a038094e9b53"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/maxmind/web-service-common-php/zipball/32f274051c543fc865e5a84d3a2c703913641ea8",
-                "reference": "32f274051c543fc865e5a84d3a2c703913641ea8",
+                "url": "https://api.github.com/repos/maxmind/web-service-common-php/zipball/4dc5a3e8df38aea4ca3b1096cee3a038094e9b53",
+                "reference": "4dc5a3e8df38aea4ca3b1096cee3a038094e9b53",
                 "shasum": ""
             },
             "require": {
@@ -3990,11 +4090,12 @@
                 "php": ">=7.2"
             },
             "require-dev": {
-                "friendsofphp/php-cs-fixer": "2.*",
+                "friendsofphp/php-cs-fixer": "3.*",
+                "phpstan/phpstan": "*",
                 "phpunit/phpunit": "^8.0 || ^9.0",
                 "squizlabs/php_codesniffer": "3.*"
             },
-            "time": "2020-11-02T17:00:53+00:00",
+            "time": "2022-03-28T17:43:20+00:00",
             "type": "library",
             "installation-source": "dist",
             "autoload": {
@@ -4017,23 +4118,23 @@
             "homepage": "https://github.com/maxmind/web-service-common-php",
             "support": {
                 "issues": "https://github.com/maxmind/web-service-common-php/issues",
-                "source": "https://github.com/maxmind/web-service-common-php/tree/v0.8.1"
+                "source": "https://github.com/maxmind/web-service-common-php/tree/v0.9.0"
             },
             "install-path": "../maxmind/web-service-common"
         },
         {
             "name": "mobiledetect/mobiledetectlib",
-            "version": "2.8.37",
-            "version_normalized": "2.8.37.0",
+            "version": "2.8.41",
+            "version_normalized": "2.8.41.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/serbanghita/Mobile-Detect.git",
-                "reference": "9841e3c46f5bd0739b53aed8ac677fa712943df7"
+                "reference": "fc9cccd4d3706d5a7537b562b59cc18f9e4c0cb1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/serbanghita/Mobile-Detect/zipball/9841e3c46f5bd0739b53aed8ac677fa712943df7",
-                "reference": "9841e3c46f5bd0739b53aed8ac677fa712943df7",
+                "url": "https://api.github.com/repos/serbanghita/Mobile-Detect/zipball/fc9cccd4d3706d5a7537b562b59cc18f9e4c0cb1",
+                "reference": "fc9cccd4d3706d5a7537b562b59cc18f9e4c0cb1",
                 "shasum": ""
             },
             "require": {
@@ -4042,16 +4143,16 @@
             "require-dev": {
                 "phpunit/phpunit": "~4.8.35||~5.7"
             },
-            "time": "2021-02-19T21:22:57+00:00",
+            "time": "2022-11-08T18:31:26+00:00",
             "type": "library",
             "installation-source": "dist",
             "autoload": {
-                "classmap": [
-                    "Mobile_Detect.php"
-                ],
                 "psr-0": {
                     "Detection": "namespaced/"
-                }
+                },
+                "classmap": [
+                    "Mobile_Detect.php"
+                ]
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
@@ -4076,14 +4177,8 @@
             ],
             "support": {
                 "issues": "https://github.com/serbanghita/Mobile-Detect/issues",
-                "source": "https://github.com/serbanghita/Mobile-Detect/tree/2.8.37"
+                "source": "https://github.com/serbanghita/Mobile-Detect/tree/2.8.41"
             },
-            "funding": [
-                {
-                    "url": "https://github.com/serbanghita",
-                    "type": "github"
-                }
-            ],
             "install-path": "../mobiledetect/mobiledetectlib"
         },
         {
@@ -4379,17 +4474,17 @@
         },
         {
             "name": "myclabs/php-enum",
-            "version": "1.8.3",
-            "version_normalized": "1.8.3.0",
+            "version": "1.8.4",
+            "version_normalized": "1.8.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/myclabs/php-enum.git",
-                "reference": "b942d263c641ddb5190929ff840c68f78713e937"
+                "reference": "a867478eae49c9f59ece437ae7f9506bfaa27483"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/myclabs/php-enum/zipball/b942d263c641ddb5190929ff840c68f78713e937",
-                "reference": "b942d263c641ddb5190929ff840c68f78713e937",
+                "url": "https://api.github.com/repos/myclabs/php-enum/zipball/a867478eae49c9f59ece437ae7f9506bfaa27483",
+                "reference": "a867478eae49c9f59ece437ae7f9506bfaa27483",
                 "shasum": ""
             },
             "require": {
@@ -4401,13 +4496,16 @@
                 "squizlabs/php_codesniffer": "1.*",
                 "vimeo/psalm": "^4.6.2"
             },
-            "time": "2021-07-05T08:18:36+00:00",
+            "time": "2022-08-04T09:53:51+00:00",
             "type": "library",
             "installation-source": "dist",
             "autoload": {
                 "psr-4": {
                     "MyCLabs\\Enum\\": "src/"
-                }
+                },
+                "classmap": [
+                    "stubs/Stringable.php"
+                ]
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
@@ -4426,7 +4524,7 @@
             ],
             "support": {
                 "issues": "https://github.com/myclabs/php-enum/issues",
-                "source": "https://github.com/myclabs/php-enum/tree/1.8.3"
+                "source": "https://github.com/myclabs/php-enum/tree/1.8.4"
             },
             "funding": [
                 {
@@ -5015,17 +5113,17 @@
         },
         {
             "name": "paragonie/constant_time_encoding",
-            "version": "v2.4.0",
-            "version_normalized": "2.4.0.0",
+            "version": "v2.6.3",
+            "version_normalized": "2.6.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/paragonie/constant_time_encoding.git",
-                "reference": "f34c2b11eb9d2c9318e13540a1dbc2a3afbd939c"
+                "reference": "58c3f47f650c94ec05a151692652a868995d2938"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/paragonie/constant_time_encoding/zipball/f34c2b11eb9d2c9318e13540a1dbc2a3afbd939c",
-                "reference": "f34c2b11eb9d2c9318e13540a1dbc2a3afbd939c",
+                "url": "https://api.github.com/repos/paragonie/constant_time_encoding/zipball/58c3f47f650c94ec05a151692652a868995d2938",
+                "reference": "58c3f47f650c94ec05a151692652a868995d2938",
                 "shasum": ""
             },
             "require": {
@@ -5035,7 +5133,7 @@
                 "phpunit/phpunit": "^6|^7|^8|^9",
                 "vimeo/psalm": "^1|^2|^3|^4"
             },
-            "time": "2020-12-06T15:14:20+00:00",
+            "time": "2022-06-14T06:56:20+00:00",
             "type": "library",
             "installation-source": "dist",
             "autoload": {
@@ -5255,23 +5353,26 @@
         },
         {
             "name": "phenx/php-font-lib",
-            "version": "0.5.2",
-            "version_normalized": "0.5.2.0",
+            "version": "0.5.4",
+            "version_normalized": "0.5.4.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/PhenX/php-font-lib.git",
-                "reference": "ca6ad461f032145fff5971b5985e5af9e7fa88d8"
+                "url": "https://github.com/dompdf/php-font-lib.git",
+                "reference": "dd448ad1ce34c63d09baccd05415e361300c35b4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/PhenX/php-font-lib/zipball/ca6ad461f032145fff5971b5985e5af9e7fa88d8",
-                "reference": "ca6ad461f032145fff5971b5985e5af9e7fa88d8",
+                "url": "https://api.github.com/repos/dompdf/php-font-lib/zipball/dd448ad1ce34c63d09baccd05415e361300c35b4",
+                "reference": "dd448ad1ce34c63d09baccd05415e361300c35b4",
                 "shasum": ""
             },
-            "require-dev": {
-                "phpunit/phpunit": "^4.8.35 || ^5 || ^6 || ^7"
+            "require": {
+                "ext-mbstring": "*"
             },
-            "time": "2020-03-08T15:31:32+00:00",
+            "require-dev": {
+                "symfony/phpunit-bridge": "^3 || ^4 || ^5"
+            },
+            "time": "2021-12-17T19:44:54+00:00",
             "type": "library",
             "installation-source": "dist",
             "autoload": {
@@ -5292,8 +5393,8 @@
             "description": "A library to read, parse, export and make subsets of different types of font files.",
             "homepage": "https://github.com/PhenX/php-font-lib",
             "support": {
-                "issues": "https://github.com/PhenX/php-font-lib/issues",
-                "source": "https://github.com/PhenX/php-font-lib/tree/0.5.2"
+                "issues": "https://github.com/dompdf/php-font-lib/issues",
+                "source": "https://github.com/dompdf/php-font-lib/tree/0.5.4"
             },
             "install-path": "../phenx/php-font-lib"
         },
@@ -5516,17 +5617,17 @@
         },
         {
             "name": "phpoffice/phpspreadsheet",
-            "version": "1.20.0",
-            "version_normalized": "1.20.0.0",
+            "version": "1.28.0",
+            "version_normalized": "1.28.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/PHPOffice/PhpSpreadsheet.git",
-                "reference": "44436f270bb134b4a94670f3d020a85dfa0a3c02"
+                "reference": "6e81cf39bbd93ebc3a4e8150444c41e8aa9b769a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/PHPOffice/PhpSpreadsheet/zipball/44436f270bb134b4a94670f3d020a85dfa0a3c02",
-                "reference": "44436f270bb134b4a94670f3d020a85dfa0a3c02",
+                "url": "https://api.github.com/repos/PHPOffice/PhpSpreadsheet/zipball/6e81cf39bbd93ebc3a4e8150444c41e8aa9b769a",
+                "reference": "6e81cf39bbd93ebc3a4e8150444c41e8aa9b769a",
                 "shasum": ""
             },
             "require": {
@@ -5543,35 +5644,36 @@
                 "ext-xmlwriter": "*",
                 "ext-zip": "*",
                 "ext-zlib": "*",
-                "ezyang/htmlpurifier": "^4.13",
+                "ezyang/htmlpurifier": "^4.15",
                 "maennchen/zipstream-php": "^2.1",
                 "markbaker/complex": "^3.0",
                 "markbaker/matrix": "^3.0",
-                "php": "^7.3 || ^8.0",
+                "php": "^7.4 || ^8.0",
                 "psr/http-client": "^1.0",
                 "psr/http-factory": "^1.0",
-                "psr/simple-cache": "^1.0"
+                "psr/simple-cache": "^1.0 || ^2.0 || ^3.0"
             },
             "require-dev": {
-                "dealerdirect/phpcodesniffer-composer-installer": "dev-master",
-                "dompdf/dompdf": "^1.0",
+                "dealerdirect/phpcodesniffer-composer-installer": "dev-main",
+                "dompdf/dompdf": "^1.0 || ^2.0",
                 "friendsofphp/php-cs-fixer": "^3.2",
-                "jpgraph/jpgraph": "^4.0",
-                "mpdf/mpdf": "^8.0",
+                "mitoteam/jpgraph": "^10.2.4",
+                "mpdf/mpdf": "^8.1.1",
                 "phpcompatibility/php-compatibility": "^9.3",
                 "phpstan/phpstan": "^1.1",
                 "phpstan/phpstan-phpunit": "^1.0",
                 "phpunit/phpunit": "^8.5 || ^9.0",
-                "squizlabs/php_codesniffer": "^3.6",
-                "tecnickcom/tcpdf": "^6.4"
+                "squizlabs/php_codesniffer": "^3.7",
+                "tecnickcom/tcpdf": "^6.5"
             },
             "suggest": {
-                "dompdf/dompdf": "Option for rendering PDF with PDF Writer (doesn't yet support PHP8)",
-                "jpgraph/jpgraph": "Option for rendering charts, or including charts with PDF or HTML Writers",
+                "dompdf/dompdf": "Option for rendering PDF with PDF Writer",
+                "ext-intl": "PHP Internationalization Functions",
+                "mitoteam/jpgraph": "Option for rendering charts, or including charts with PDF or HTML Writers",
                 "mpdf/mpdf": "Option for rendering PDF with PDF Writer",
-                "tecnickcom/tcpdf": "Option for rendering PDF with PDF Writer (doesn't yet support PHP8)"
+                "tecnickcom/tcpdf": "Option for rendering PDF with PDF Writer"
             },
-            "time": "2021-11-23T15:23:42+00:00",
+            "time": "2023-02-25T12:24:49+00:00",
             "type": "library",
             "installation-source": "dist",
             "autoload": {
@@ -5617,7 +5719,7 @@
             ],
             "support": {
                 "issues": "https://github.com/PHPOffice/PhpSpreadsheet/issues",
-                "source": "https://github.com/PHPOffice/PhpSpreadsheet/tree/1.20.0"
+                "source": "https://github.com/PHPOffice/PhpSpreadsheet/tree/1.28.0"
             },
             "install-path": "../phpoffice/phpspreadsheet"
         },
@@ -5697,17 +5799,17 @@
         },
         {
             "name": "phpseclib/phpseclib",
-            "version": "3.0.12",
-            "version_normalized": "3.0.12.0",
+            "version": "3.0.19",
+            "version_normalized": "3.0.19.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpseclib/phpseclib.git",
-                "reference": "89bfb45bd8b1abc3b37e910d57f5dbd3174f40fb"
+                "reference": "cc181005cf548bfd8a4896383bb825d859259f95"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpseclib/phpseclib/zipball/89bfb45bd8b1abc3b37e910d57f5dbd3174f40fb",
-                "reference": "89bfb45bd8b1abc3b37e910d57f5dbd3174f40fb",
+                "url": "https://api.github.com/repos/phpseclib/phpseclib/zipball/cc181005cf548bfd8a4896383bb825d859259f95",
+                "reference": "cc181005cf548bfd8a4896383bb825d859259f95",
                 "shasum": ""
             },
             "require": {
@@ -5716,17 +5818,16 @@
                 "php": ">=5.6.1"
             },
             "require-dev": {
-                "phing/phing": "~2.7",
-                "phpunit/phpunit": "^5.7|^6.0|^9.4",
-                "squizlabs/php_codesniffer": "~2.0"
+                "phpunit/phpunit": "*"
             },
             "suggest": {
+                "ext-dom": "Install the DOM extension to load XML formatted public keys.",
                 "ext-gmp": "Install the GMP (GNU Multiple Precision) extension in order to speed up arbitrary precision integer arithmetic operations.",
                 "ext-libsodium": "SSH2/SFTP can make use of some algorithms provided by the libsodium-php extension.",
                 "ext-mcrypt": "Install the Mcrypt extension in order to speed up a few other cryptographic operations.",
                 "ext-openssl": "Install the OpenSSL extension in order to speed up a wide variety of cryptographic operations."
             },
-            "time": "2021-11-28T23:46:03+00:00",
+            "time": "2023-03-05T17:13:09+00:00",
             "type": "library",
             "installation-source": "dist",
             "autoload": {
@@ -5791,7 +5892,7 @@
             ],
             "support": {
                 "issues": "https://github.com/phpseclib/phpseclib/issues",
-                "source": "https://github.com/phpseclib/phpseclib/tree/3.0.12"
+                "source": "https://github.com/phpseclib/phpseclib/tree/3.0.19"
             },
             "funding": [
                 {
@@ -8311,12 +8412,12 @@
             },
             "installation-source": "dist",
             "autoload": {
-                "psr-4": {
-                    "Spatie\\Backup\\": "src"
-                },
                 "files": [
                     "src/Helpers/functions.php"
-                ]
+                ],
+                "psr-4": {
+                    "Spatie\\Backup\\": "src"
+                }
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
@@ -8410,31 +8511,32 @@
         },
         {
             "name": "stevebauman/location",
-            "version": "v6.2.0",
-            "version_normalized": "6.2.0.0",
+            "version": "v6.6.2",
+            "version_normalized": "6.6.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/stevebauman/location.git",
-                "reference": "cc2e63fc2b64f17d4404fe206612bc67dca16b10"
+                "reference": "49f28e58daa0382bdc571b20f27b3c57c8691f1c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/stevebauman/location/zipball/cc2e63fc2b64f17d4404fe206612bc67dca16b10",
-                "reference": "cc2e63fc2b64f17d4404fe206612bc67dca16b10",
+                "url": "https://api.github.com/repos/stevebauman/location/zipball/49f28e58daa0382bdc571b20f27b3c57c8691f1c",
+                "reference": "49f28e58daa0382bdc571b20f27b3c57c8691f1c",
                 "shasum": ""
             },
             "require": {
                 "ext-curl": "*",
                 "ext-json": "*",
                 "geoip2/geoip2": "^2.0",
-                "illuminate/support": "~5.0|~6.0|~7.0|~8.0",
-                "php": ">=7.0"
+                "illuminate/support": "^5.0|^6.0|^7.0|^8.0|^9.0|^10.0",
+                "php": ">=7.3"
             },
             "require-dev": {
                 "mockery/mockery": "~0.9|^1.0",
-                "orchestra/testbench": "~3.2|~4.0|^6.0"
+                "orchestra/testbench": "~3.2|~4.0|^6.0|^7.0|^8.0",
+                "pestphp/pest": "^1.21"
             },
-            "time": "2021-08-13T19:19:10+00:00",
+            "time": "2023-02-27T14:26:23+00:00",
             "type": "library",
             "extra": {
                 "laravel": {
@@ -8462,7 +8564,7 @@
                     "email": "steven_bauman@outlook.com"
                 }
             ],
-            "description": "Retrieve a users location by their IP Address",
+            "description": "Retrieve a user's location by their IP Address",
             "keywords": [
                 "IP",
                 "geo",
@@ -8474,7 +8576,7 @@
             ],
             "support": {
                 "issues": "https://github.com/stevebauman/location/issues",
-                "source": "https://github.com/stevebauman/location/tree/v6.2.0"
+                "source": "https://github.com/stevebauman/location/tree/v6.6.2"
             },
             "install-path": "../stevebauman/location"
         },
@@ -11227,29 +11329,29 @@
         },
         {
             "name": "yajra/laravel-datatables-oracle",
-            "version": "v9.18.2",
-            "version_normalized": "9.18.2.0",
+            "version": "v9.21.2",
+            "version_normalized": "9.21.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/yajra/laravel-datatables.git",
-                "reference": "f4eebc1dc2b067058dfb91e7c067de862353c40f"
+                "reference": "a7fd01f06282923e9c63fa27fe6b391e21dc321a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yajra/laravel-datatables/zipball/f4eebc1dc2b067058dfb91e7c067de862353c40f",
-                "reference": "f4eebc1dc2b067058dfb91e7c067de862353c40f",
+                "url": "https://api.github.com/repos/yajra/laravel-datatables/zipball/a7fd01f06282923e9c63fa27fe6b391e21dc321a",
+                "reference": "a7fd01f06282923e9c63fa27fe6b391e21dc321a",
                 "shasum": ""
             },
             "require": {
-                "illuminate/database": "5.8.*|^6|^7|^8",
-                "illuminate/filesystem": "5.8.*|^6|^7|^8",
-                "illuminate/http": "5.8.*|^6|^7|^8",
-                "illuminate/support": "5.8.*|^6|^7|^8",
-                "illuminate/view": "5.8.*|^6|^7|^8",
+                "illuminate/database": "5.8.*|^6|^7|^8|^9",
+                "illuminate/filesystem": "5.8.*|^6|^7|^8|^9",
+                "illuminate/http": "5.8.*|^6|^7|^8|^9",
+                "illuminate/support": "5.8.*|^6|^7|^8|^9",
+                "illuminate/view": "5.8.*|^6|^7|^8|^9",
                 "php": "^7.1.3|^8"
             },
             "require-dev": {
-                "orchestra/testbench": "^3.8"
+                "orchestra/testbench": "^3.8|^4.0|^5.0|^6.0|^7.0"
             },
             "suggest": {
                 "yajra/laravel-datatables-buttons": "Plugin for server-side exporting of dataTables.",
@@ -11257,7 +11359,7 @@
                 "yajra/laravel-datatables-fractal": "Plugin for server-side response using Fractal.",
                 "yajra/laravel-datatables-html": "Plugin for server-side HTML builder of dataTables."
             },
-            "time": "2021-10-27T12:38:21+00:00",
+            "time": "2022-07-12T04:48:03+00:00",
             "type": "library",
             "extra": {
                 "branch-alias": {
@@ -11274,12 +11376,12 @@
             },
             "installation-source": "dist",
             "autoload": {
-                "psr-4": {
-                    "Yajra\\DataTables\\": "src/"
-                },
                 "files": [
                     "src/helper.php"
-                ]
+                ],
+                "psr-4": {
+                    "Yajra\\DataTables\\": "src/"
+                }
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
@@ -11291,7 +11393,7 @@
                     "email": "aqangeles@gmail.com"
                 }
             ],
-            "description": "jQuery DataTables API for Laravel 4|5|6|7",
+            "description": "jQuery DataTables API for Laravel 5|6|7|8|9",
             "keywords": [
                 "datatables",
                 "jquery",
@@ -11299,7 +11401,7 @@
             ],
             "support": {
                 "issues": "https://github.com/yajra/laravel-datatables/issues",
-                "source": "https://github.com/yajra/laravel-datatables/tree/v9.18.2"
+                "source": "https://github.com/yajra/laravel-datatables/tree/v9.21.2"
             },
             "funding": [
                 {

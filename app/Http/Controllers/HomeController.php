@@ -3,10 +3,10 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use Ajifatur\FaturCMS\Models\Mentor;
-use Ajifatur\FaturCMS\Models\Mitra;
-use Ajifatur\FaturCMS\Models\Program;
-use Ajifatur\FaturCMS\Models\Slider;
+use Campusdigital\CampusCMS\Models\Mentor;
+use Campusdigital\CampusCMS\Models\Mitra;
+use Campusdigital\CampusCMS\Models\Program;
+use Campusdigital\CampusCMS\Models\Slider;
 use App\User;
 
 class HomeController extends Controller

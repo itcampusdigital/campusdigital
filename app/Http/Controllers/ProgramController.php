@@ -5,9 +5,9 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Validation\Rule;
-use Ajifatur\FaturCMS\Models\KategoriProgram;
-use Ajifatur\FaturCMS\Models\Program;
-use Ajifatur\FaturCMS\Models\UserProgram;
+use Campusdigital\CampusCMS\Models\KategoriProgram;
+use Campusdigital\CampusCMS\Models\Program;
+use Campusdigital\CampusCMS\Models\UserProgram;
 
 class ProgramController extends Controller
 {

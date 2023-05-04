@@ -20,4 +20,6 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-\Ajifatur\FaturCMS\FaturCMS::APIroutes();
+
+
+\Campusdigital\CampusCMS\FaturCMS::APIroutes();

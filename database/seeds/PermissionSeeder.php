@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Database\Seeder;
-use Ajifatur\FaturCMS\Models\Permission;
+use Campusdigital\CampusCMS\Models\Permission;
 
 class PermissionSeeder extends Seeder
 {

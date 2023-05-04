@@ -3,8 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use Ajifatur\FaturCMS\Models\Halaman;
-use Ajifatur\FaturCMS\Models\Mentor;
+use Campusdigital\CampusCMS\Models\Halaman;
+use Campusdigital\CampusCMS\Models\Mentor;
 
 class HalamanController extends Controller
 {

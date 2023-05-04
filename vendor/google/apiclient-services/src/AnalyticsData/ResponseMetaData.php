@@ -36,7 +36,7 @@ class ResponseMetaData extends \Google\Model
   /**
    * @var bool
    */
-  public $thresholdingApplied;
+  public $subjectToThresholding;
   /**
    * @var string
    */
@@ -101,16 +101,16 @@ class ResponseMetaData extends \Google\Model
   /**
    * @param bool
    */
-  public function setThresholdingApplied($thresholdingApplied)
+  public function setSubjectToThresholding($subjectToThresholding)
   {
-    $this->thresholdingApplied = $thresholdingApplied;
+    $this->subjectToThresholding = $subjectToThresholding;
   }
   /**
    * @return bool
    */
-  public function getThresholdingApplied()
+  public function getSubjectToThresholding()
   {
-    return $this->thresholdingApplied;
+    return $this->subjectToThresholding;
   }
   /**
    * @param string

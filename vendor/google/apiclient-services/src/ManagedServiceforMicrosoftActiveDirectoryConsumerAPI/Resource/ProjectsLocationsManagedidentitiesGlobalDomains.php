@@ -20,6 +20,9 @@ namespace Google\Service\ManagedServiceforMicrosoftActiveDirectoryConsumerAPI\Re
 use Google\Service\ManagedServiceforMicrosoftActiveDirectoryConsumerAPI\AttachTrustRequest;
 use Google\Service\ManagedServiceforMicrosoftActiveDirectoryConsumerAPI\DetachTrustRequest;
 use Google\Service\ManagedServiceforMicrosoftActiveDirectoryConsumerAPI\Domain;
+use Google\Service\ManagedServiceforMicrosoftActiveDirectoryConsumerAPI\DomainJoinMachineRequest;
+use Google\Service\ManagedServiceforMicrosoftActiveDirectoryConsumerAPI\DomainJoinMachineResponse;
+use Google\Service\ManagedServiceforMicrosoftActiveDirectoryConsumerAPI\ExtendSchemaRequest;
 use Google\Service\ManagedServiceforMicrosoftActiveDirectoryConsumerAPI\LDAPSSettings;
 use Google\Service\ManagedServiceforMicrosoftActiveDirectoryConsumerAPI\ListDomainsResponse;
 use Google\Service\ManagedServiceforMicrosoftActiveDirectoryConsumerAPI\Operation;
@@ -27,6 +30,7 @@ use Google\Service\ManagedServiceforMicrosoftActiveDirectoryConsumerAPI\Policy;
 use Google\Service\ManagedServiceforMicrosoftActiveDirectoryConsumerAPI\ReconfigureTrustRequest;
 use Google\Service\ManagedServiceforMicrosoftActiveDirectoryConsumerAPI\ResetAdminPasswordRequest;
 use Google\Service\ManagedServiceforMicrosoftActiveDirectoryConsumerAPI\ResetAdminPasswordResponse;
+use Google\Service\ManagedServiceforMicrosoftActiveDirectoryConsumerAPI\RestoreDomainRequest;
 use Google\Service\ManagedServiceforMicrosoftActiveDirectoryConsumerAPI\SetIamPolicyRequest;
 use Google\Service\ManagedServiceforMicrosoftActiveDirectoryConsumerAPI\TestIamPermissionsRequest;
 use Google\Service\ManagedServiceforMicrosoftActiveDirectoryConsumerAPI\TestIamPermissionsResponse;
@@ -37,7 +41,7 @@ use Google\Service\ManagedServiceforMicrosoftActiveDirectoryConsumerAPI\Validate
  * Typical usage is:
  *  <code>
  *   $managedidentitiesService = new Google\Service\ManagedServiceforMicrosoftActiveDirectoryConsumerAPI(...);
- *   $domains = $managedidentitiesService->domains;
+ *   $domains = $managedidentitiesService->projects_locations_global_domains;
  *  </code>
  */
 class ProjectsLocationsManagedidentitiesGlobalDomains extends \Google\Service\Resource
@@ -112,6 +116,37 @@ class ProjectsLocationsManagedidentitiesGlobalDomains extends \Google\Service\Re
     return $this->call('detachTrust', [$params], Operation::class);
   }
   /**
+   * DomainJoinMachine API joins a Compute Engine VM to the domain
+   * (domains.domainJoinMachine)
+   *
+   * @param string $domain Required. The domain resource name using the form:
+   * projects/{project_id}/locations/global/domains/{domain_name}
+   * @param DomainJoinMachineRequest $postBody
+   * @param array $optParams Optional parameters.
+   * @return DomainJoinMachineResponse
+   */
+  public function domainJoinMachine($domain, DomainJoinMachineRequest $postBody, $optParams = [])
+  {
+    $params = ['domain' => $domain, 'postBody' => $postBody];
+    $params = array_merge($params, $optParams);
+    return $this->call('domainJoinMachine', [$params], DomainJoinMachineResponse::class);
+  }
+  /**
+   * Extend Schema for Domain (domains.extendSchema)
+   *
+   * @param string $domain Required. The domain resource name using the form:
+   * `projects/{project_id}/locations/global/domains/{domain_name}`
+   * @param ExtendSchemaRequest $postBody
+   * @param array $optParams Optional parameters.
+   * @return Operation
+   */
+  public function extendSchema($domain, ExtendSchemaRequest $postBody, $optParams = [])
+  {
+    $params = ['domain' => $domain, 'postBody' => $postBody];
+    $params = array_merge($params, $optParams);
+    return $this->call('extendSchema', [$params], Operation::class);
+  }
+  /**
    * Gets information about a domain. (domains.get)
    *
    * @param string $name Required. The domain resource name using the form:
@@ -130,8 +165,9 @@ class ProjectsLocationsManagedidentitiesGlobalDomains extends \Google\Service\Re
    * resource exists and does not have a policy set. (domains.getIamPolicy)
    *
    * @param string $resource REQUIRED: The resource for which the policy is being
-   * requested. See the operation documentation for the appropriate value for this
-   * field.
+   * requested. See [Resource
+   * names](https://cloud.google.com/apis/design/resource_names) for the
+   * appropriate value for this field.
    * @param array $optParams Optional parameters.
    *
    * @opt_param int options.requestedPolicyVersion Optional. The maximum policy
@@ -249,13 +285,30 @@ class ProjectsLocationsManagedidentitiesGlobalDomains extends \Google\Service\Re
     return $this->call('resetAdminPassword', [$params], ResetAdminPasswordResponse::class);
   }
   /**
+   * RestoreDomain restores domain backup mentioned in the RestoreDomainRequest
+   * (domains.restore)
+   *
+   * @param string $name Required. Resource name for the domain to which the
+   * backup belongs
+   * @param RestoreDomainRequest $postBody
+   * @param array $optParams Optional parameters.
+   * @return Operation
+   */
+  public function restore($name, RestoreDomainRequest $postBody, $optParams = [])
+  {
+    $params = ['name' => $name, 'postBody' => $postBody];
+    $params = array_merge($params, $optParams);
+    return $this->call('restore', [$params], Operation::class);
+  }
+  /**
    * Sets the access control policy on the specified resource. Replaces any
    * existing policy. Can return `NOT_FOUND`, `INVALID_ARGUMENT`, and
    * `PERMISSION_DENIED` errors. (domains.setIamPolicy)
    *
    * @param string $resource REQUIRED: The resource for which the policy is being
-   * specified. See the operation documentation for the appropriate value for this
-   * field.
+   * specified. See [Resource
+   * names](https://cloud.google.com/apis/design/resource_names) for the
+   * appropriate value for this field.
    * @param SetIamPolicyRequest $postBody
    * @param array $optParams Optional parameters.
    * @return Policy
@@ -274,8 +327,9 @@ class ProjectsLocationsManagedidentitiesGlobalDomains extends \Google\Service\Re
    * This operation may "fail open" without warning. (domains.testIamPermissions)
    *
    * @param string $resource REQUIRED: The resource for which the policy detail is
-   * being requested. See the operation documentation for the appropriate value
-   * for this field.
+   * being requested. See [Resource
+   * names](https://cloud.google.com/apis/design/resource_names) for the
+   * appropriate value for this field.
    * @param TestIamPermissionsRequest $postBody
    * @param array $optParams Optional parameters.
    * @return TestIamPermissionsResponse

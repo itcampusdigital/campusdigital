@@ -4,11 +4,11 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\User;
-use Ajifatur\FaturCMS\Models\Blog;
-use Ajifatur\FaturCMS\Models\KategoriArtikel;
-use Ajifatur\FaturCMS\Models\Komentar;
-use Ajifatur\FaturCMS\Models\Kontributor;
-use Ajifatur\FaturCMS\Models\Tag;
+use Campusdigital\CampusCMS\Models\Blog;
+use Campusdigital\CampusCMS\Models\KategoriArtikel;
+use Campusdigital\CampusCMS\Models\Komentar;
+use Campusdigital\CampusCMS\Models\Kontributor;
+use Campusdigital\CampusCMS\Models\Tag;
 
 class ArtikelController extends Controller
 {		

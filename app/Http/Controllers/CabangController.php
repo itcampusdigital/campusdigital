@@ -7,7 +7,7 @@ use App\Models\Gambara;
 use Illuminate\Support\Facades\File;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
-use Ajifatur\FaturCMS\Models\Cabang;
+use Campusdigital\CampusCMS\Models\Cabang;
 
 class CabangController extends Controller
 {		

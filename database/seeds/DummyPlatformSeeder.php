@@ -3,7 +3,7 @@
 namespace Ajifatur\FaturCMS\DummySeeder;
 
 use Illuminate\Database\Seeder;
-use Ajifatur\FaturCMS\Models\Platform;
+use Campusdigital\CampusCMS\Models\Platform;
 
 class DummyPlatformSeeder extends Seeder
 {

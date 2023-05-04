@@ -35,6 +35,8 @@ class NetworkConfig extends \Google\Model
    * @var bool
    */
   public $enableL4ilbSubsetting;
+  protected $gatewayApiConfigType = GatewayAPIConfig::class;
+  protected $gatewayApiConfigDataType = '';
   /**
    * @var string
    */
@@ -43,6 +45,8 @@ class NetworkConfig extends \Google\Model
    * @var string
    */
   public $privateIpv6GoogleAccess;
+  protected $serviceExternalIpsConfigType = ServiceExternalIPsConfig::class;
+  protected $serviceExternalIpsConfigDataType = '';
   /**
    * @var string
    */
@@ -119,6 +123,20 @@ class NetworkConfig extends \Google\Model
     return $this->enableL4ilbSubsetting;
   }
   /**
+   * @param GatewayAPIConfig
+   */
+  public function setGatewayApiConfig(GatewayAPIConfig $gatewayApiConfig)
+  {
+    $this->gatewayApiConfig = $gatewayApiConfig;
+  }
+  /**
+   * @return GatewayAPIConfig
+   */
+  public function getGatewayApiConfig()
+  {
+    return $this->gatewayApiConfig;
+  }
+  /**
    * @param string
    */
   public function setNetwork($network)
@@ -145,6 +163,20 @@ class NetworkConfig extends \Google\Model
   public function getPrivateIpv6GoogleAccess()
   {
     return $this->privateIpv6GoogleAccess;
+  }
+  /**
+   * @param ServiceExternalIPsConfig
+   */
+  public function setServiceExternalIpsConfig(ServiceExternalIPsConfig $serviceExternalIpsConfig)
+  {
+    $this->serviceExternalIpsConfig = $serviceExternalIpsConfig;
+  }
+  /**
+   * @return ServiceExternalIPsConfig
+   */
+  public function getServiceExternalIpsConfig()
+  {
+    return $this->serviceExternalIpsConfig;
   }
   /**
    * @param string

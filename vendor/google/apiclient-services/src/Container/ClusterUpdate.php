@@ -20,6 +20,8 @@ namespace Google\Service\Container;
 class ClusterUpdate extends \Google\Collection
 {
   protected $collection_key = 'desiredLocations';
+  protected $additionalPodRangesConfigType = AdditionalPodRangesConfig::class;
+  protected $additionalPodRangesConfigDataType = '';
   protected $desiredAddonsConfigType = AddonsConfig::class;
   protected $desiredAddonsConfigDataType = '';
   protected $desiredAuthenticatorGroupsConfigType = AuthenticatorGroupsConfig::class;
@@ -28,6 +30,8 @@ class ClusterUpdate extends \Google\Collection
   protected $desiredBinaryAuthorizationDataType = '';
   protected $desiredClusterAutoscalingType = ClusterAutoscaling::class;
   protected $desiredClusterAutoscalingDataType = '';
+  protected $desiredCostManagementConfigType = CostManagementConfig::class;
+  protected $desiredCostManagementConfigDataType = '';
   protected $desiredDatabaseEncryptionType = DatabaseEncryption::class;
   protected $desiredDatabaseEncryptionDataType = '';
   /**
@@ -38,8 +42,16 @@ class ClusterUpdate extends \Google\Collection
   protected $desiredDefaultSnatStatusDataType = '';
   protected $desiredDnsConfigType = DNSConfig::class;
   protected $desiredDnsConfigDataType = '';
+  /**
+   * @var bool
+   */
+  public $desiredEnablePrivateEndpoint;
+  protected $desiredGatewayApiConfigType = GatewayAPIConfig::class;
+  protected $desiredGatewayApiConfigDataType = '';
   protected $desiredGcfsConfigType = GcfsConfig::class;
   protected $desiredGcfsConfigDataType = '';
+  protected $desiredIdentityServiceConfigType = IdentityServiceConfig::class;
+  protected $desiredIdentityServiceConfigDataType = '';
   /**
    * @var string
    */
@@ -72,12 +84,16 @@ class ClusterUpdate extends \Google\Collection
    * @var string
    */
   public $desiredMonitoringService;
+  protected $desiredNodePoolAutoConfigNetworkTagsType = NetworkTags::class;
+  protected $desiredNodePoolAutoConfigNetworkTagsDataType = '';
   protected $desiredNodePoolAutoscalingType = NodePoolAutoscaling::class;
   protected $desiredNodePoolAutoscalingDataType = '';
   /**
    * @var string
    */
   public $desiredNodePoolId;
+  protected $desiredNodePoolLoggingConfigType = NodePoolLoggingConfig::class;
+  protected $desiredNodePoolLoggingConfigDataType = '';
   /**
    * @var string
    */
@@ -94,13 +110,39 @@ class ClusterUpdate extends \Google\Collection
   protected $desiredReleaseChannelDataType = '';
   protected $desiredResourceUsageExportConfigType = ResourceUsageExportConfig::class;
   protected $desiredResourceUsageExportConfigDataType = '';
+  protected $desiredServiceExternalIpsConfigType = ServiceExternalIPsConfig::class;
+  protected $desiredServiceExternalIpsConfigDataType = '';
   protected $desiredShieldedNodesType = ShieldedNodes::class;
   protected $desiredShieldedNodesDataType = '';
+  /**
+   * @var string
+   */
+  public $desiredStackType;
   protected $desiredVerticalPodAutoscalingType = VerticalPodAutoscaling::class;
   protected $desiredVerticalPodAutoscalingDataType = '';
   protected $desiredWorkloadIdentityConfigType = WorkloadIdentityConfig::class;
   protected $desiredWorkloadIdentityConfigDataType = '';
+  /**
+   * @var string
+   */
+  public $etag;
+  protected $removedAdditionalPodRangesConfigType = AdditionalPodRangesConfig::class;
+  protected $removedAdditionalPodRangesConfigDataType = '';
 
+  /**
+   * @param AdditionalPodRangesConfig
+   */
+  public function setAdditionalPodRangesConfig(AdditionalPodRangesConfig $additionalPodRangesConfig)
+  {
+    $this->additionalPodRangesConfig = $additionalPodRangesConfig;
+  }
+  /**
+   * @return AdditionalPodRangesConfig
+   */
+  public function getAdditionalPodRangesConfig()
+  {
+    return $this->additionalPodRangesConfig;
+  }
   /**
    * @param AddonsConfig
    */
@@ -156,6 +198,20 @@ class ClusterUpdate extends \Google\Collection
   public function getDesiredClusterAutoscaling()
   {
     return $this->desiredClusterAutoscaling;
+  }
+  /**
+   * @param CostManagementConfig
+   */
+  public function setDesiredCostManagementConfig(CostManagementConfig $desiredCostManagementConfig)
+  {
+    $this->desiredCostManagementConfig = $desiredCostManagementConfig;
+  }
+  /**
+   * @return CostManagementConfig
+   */
+  public function getDesiredCostManagementConfig()
+  {
+    return $this->desiredCostManagementConfig;
   }
   /**
    * @param DatabaseEncryption
@@ -214,6 +270,34 @@ class ClusterUpdate extends \Google\Collection
     return $this->desiredDnsConfig;
   }
   /**
+   * @param bool
+   */
+  public function setDesiredEnablePrivateEndpoint($desiredEnablePrivateEndpoint)
+  {
+    $this->desiredEnablePrivateEndpoint = $desiredEnablePrivateEndpoint;
+  }
+  /**
+   * @return bool
+   */
+  public function getDesiredEnablePrivateEndpoint()
+  {
+    return $this->desiredEnablePrivateEndpoint;
+  }
+  /**
+   * @param GatewayAPIConfig
+   */
+  public function setDesiredGatewayApiConfig(GatewayAPIConfig $desiredGatewayApiConfig)
+  {
+    $this->desiredGatewayApiConfig = $desiredGatewayApiConfig;
+  }
+  /**
+   * @return GatewayAPIConfig
+   */
+  public function getDesiredGatewayApiConfig()
+  {
+    return $this->desiredGatewayApiConfig;
+  }
+  /**
    * @param GcfsConfig
    */
   public function setDesiredGcfsConfig(GcfsConfig $desiredGcfsConfig)
@@ -226,6 +310,20 @@ class ClusterUpdate extends \Google\Collection
   public function getDesiredGcfsConfig()
   {
     return $this->desiredGcfsConfig;
+  }
+  /**
+   * @param IdentityServiceConfig
+   */
+  public function setDesiredIdentityServiceConfig(IdentityServiceConfig $desiredIdentityServiceConfig)
+  {
+    $this->desiredIdentityServiceConfig = $desiredIdentityServiceConfig;
+  }
+  /**
+   * @return IdentityServiceConfig
+   */
+  public function getDesiredIdentityServiceConfig()
+  {
+    return $this->desiredIdentityServiceConfig;
   }
   /**
    * @param string
@@ -382,6 +480,20 @@ class ClusterUpdate extends \Google\Collection
     return $this->desiredMonitoringService;
   }
   /**
+   * @param NetworkTags
+   */
+  public function setDesiredNodePoolAutoConfigNetworkTags(NetworkTags $desiredNodePoolAutoConfigNetworkTags)
+  {
+    $this->desiredNodePoolAutoConfigNetworkTags = $desiredNodePoolAutoConfigNetworkTags;
+  }
+  /**
+   * @return NetworkTags
+   */
+  public function getDesiredNodePoolAutoConfigNetworkTags()
+  {
+    return $this->desiredNodePoolAutoConfigNetworkTags;
+  }
+  /**
    * @param NodePoolAutoscaling
    */
   public function setDesiredNodePoolAutoscaling(NodePoolAutoscaling $desiredNodePoolAutoscaling)
@@ -408,6 +520,20 @@ class ClusterUpdate extends \Google\Collection
   public function getDesiredNodePoolId()
   {
     return $this->desiredNodePoolId;
+  }
+  /**
+   * @param NodePoolLoggingConfig
+   */
+  public function setDesiredNodePoolLoggingConfig(NodePoolLoggingConfig $desiredNodePoolLoggingConfig)
+  {
+    $this->desiredNodePoolLoggingConfig = $desiredNodePoolLoggingConfig;
+  }
+  /**
+   * @return NodePoolLoggingConfig
+   */
+  public function getDesiredNodePoolLoggingConfig()
+  {
+    return $this->desiredNodePoolLoggingConfig;
   }
   /**
    * @param string
@@ -494,6 +620,20 @@ class ClusterUpdate extends \Google\Collection
     return $this->desiredResourceUsageExportConfig;
   }
   /**
+   * @param ServiceExternalIPsConfig
+   */
+  public function setDesiredServiceExternalIpsConfig(ServiceExternalIPsConfig $desiredServiceExternalIpsConfig)
+  {
+    $this->desiredServiceExternalIpsConfig = $desiredServiceExternalIpsConfig;
+  }
+  /**
+   * @return ServiceExternalIPsConfig
+   */
+  public function getDesiredServiceExternalIpsConfig()
+  {
+    return $this->desiredServiceExternalIpsConfig;
+  }
+  /**
    * @param ShieldedNodes
    */
   public function setDesiredShieldedNodes(ShieldedNodes $desiredShieldedNodes)
@@ -506,6 +646,20 @@ class ClusterUpdate extends \Google\Collection
   public function getDesiredShieldedNodes()
   {
     return $this->desiredShieldedNodes;
+  }
+  /**
+   * @param string
+   */
+  public function setDesiredStackType($desiredStackType)
+  {
+    $this->desiredStackType = $desiredStackType;
+  }
+  /**
+   * @return string
+   */
+  public function getDesiredStackType()
+  {
+    return $this->desiredStackType;
   }
   /**
    * @param VerticalPodAutoscaling
@@ -534,6 +688,34 @@ class ClusterUpdate extends \Google\Collection
   public function getDesiredWorkloadIdentityConfig()
   {
     return $this->desiredWorkloadIdentityConfig;
+  }
+  /**
+   * @param string
+   */
+  public function setEtag($etag)
+  {
+    $this->etag = $etag;
+  }
+  /**
+   * @return string
+   */
+  public function getEtag()
+  {
+    return $this->etag;
+  }
+  /**
+   * @param AdditionalPodRangesConfig
+   */
+  public function setRemovedAdditionalPodRangesConfig(AdditionalPodRangesConfig $removedAdditionalPodRangesConfig)
+  {
+    $this->removedAdditionalPodRangesConfig = $removedAdditionalPodRangesConfig;
+  }
+  /**
+   * @return AdditionalPodRangesConfig
+   */
+  public function getRemovedAdditionalPodRangesConfig()
+  {
+    return $this->removedAdditionalPodRangesConfig;
   }
 }
 

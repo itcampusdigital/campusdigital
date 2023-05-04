@@ -27,8 +27,12 @@ class TextStream extends \Google\Collection
   /**
    * @var string
    */
+  public $displayName;
+  /**
+   * @var string
+   */
   public $languageCode;
-  protected $mappingType = TextAtom::class;
+  protected $mappingType = TextMapping::class;
   protected $mappingDataType = 'array';
 
   /**
@@ -48,6 +52,20 @@ class TextStream extends \Google\Collection
   /**
    * @param string
    */
+  public function setDisplayName($displayName)
+  {
+    $this->displayName = $displayName;
+  }
+  /**
+   * @return string
+   */
+  public function getDisplayName()
+  {
+    return $this->displayName;
+  }
+  /**
+   * @param string
+   */
   public function setLanguageCode($languageCode)
   {
     $this->languageCode = $languageCode;
@@ -60,14 +78,14 @@ class TextStream extends \Google\Collection
     return $this->languageCode;
   }
   /**
-   * @param TextAtom[]
+   * @param TextMapping[]
    */
   public function setMapping($mapping)
   {
     $this->mapping = $mapping;
   }
   /**
-   * @return TextAtom[]
+   * @return TextMapping[]
    */
   public function getMapping()
   {

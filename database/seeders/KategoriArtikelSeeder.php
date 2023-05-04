@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Database\Seeder;
-use Ajifatur\FaturCMS\Models\KategoriArtikel;
+use Campusdigital\CampusCMS\Models\KategoriArtikel;
 
 class KategoriArtikelSeeder extends Seeder
 {

@@ -26,6 +26,10 @@ class ItemCountByStatus extends \Google\Model
   /**
    * @var string
    */
+  public $indexedItemsCount;
+  /**
+   * @var string
+   */
   public $statusCode;
 
   /**
@@ -41,6 +45,20 @@ class ItemCountByStatus extends \Google\Model
   public function getCount()
   {
     return $this->count;
+  }
+  /**
+   * @param string
+   */
+  public function setIndexedItemsCount($indexedItemsCount)
+  {
+    $this->indexedItemsCount = $indexedItemsCount;
+  }
+  /**
+   * @return string
+   */
+  public function getIndexedItemsCount()
+  {
+    return $this->indexedItemsCount;
   }
   /**
    * @param string

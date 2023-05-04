@@ -14,8 +14,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 // Letakkan fungsi ini pada route paling atas
-\Ajifatur\FaturCMS\FaturCMS::routes();
-
+\Campusdigital\CampusCMS\FaturCMS::routes();
 // Home
 Route::get('/', 'HomeController@index')->name('site.home');
 
@@ -47,4 +46,6 @@ Route::get('/galery/delete/{id}', 'CabangController@delete')->name('galery.delet
 
 // Halaman
 Route::get('/{permalink}', 'HalamanController@detail')->name('site.halaman.detail');
+
+
 

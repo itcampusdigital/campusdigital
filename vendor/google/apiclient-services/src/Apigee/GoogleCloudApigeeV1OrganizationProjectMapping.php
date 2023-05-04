@@ -23,12 +23,34 @@ class GoogleCloudApigeeV1OrganizationProjectMapping extends \Google\Collection
   /**
    * @var string
    */
+  public $location;
+  /**
+   * @var string
+   */
   public $organization;
+  /**
+   * @var string
+   */
+  public $projectId;
   /**
    * @var string[]
    */
   public $projectIds;
 
+  /**
+   * @param string
+   */
+  public function setLocation($location)
+  {
+    $this->location = $location;
+  }
+  /**
+   * @return string
+   */
+  public function getLocation()
+  {
+    return $this->location;
+  }
   /**
    * @param string
    */
@@ -42,6 +64,20 @@ class GoogleCloudApigeeV1OrganizationProjectMapping extends \Google\Collection
   public function getOrganization()
   {
     return $this->organization;
+  }
+  /**
+   * @param string
+   */
+  public function setProjectId($projectId)
+  {
+    $this->projectId = $projectId;
+  }
+  /**
+   * @return string
+   */
+  public function getProjectId()
+  {
+    return $this->projectId;
   }
   /**
    * @param string[]
