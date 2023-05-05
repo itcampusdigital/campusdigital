@@ -281,12 +281,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/CAMPUSDIGITALID/CampusCMS.git",
-                "reference": "d9a8072ac1d410f1f35bbe3be8d8c84e4ef1afc0"
+                "reference": "e3148634d7018d6ca183530b3499368814306932"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/CAMPUSDIGITALID/CampusCMS/zipball/d9a8072ac1d410f1f35bbe3be8d8c84e4ef1afc0",
-                "reference": "d9a8072ac1d410f1f35bbe3be8d8c84e4ef1afc0",
+                "url": "https://api.github.com/repos/CAMPUSDIGITALID/CampusCMS/zipball/e3148634d7018d6ca183530b3499368814306932",
+                "reference": "e3148634d7018d6ca183530b3499368814306932",
                 "shasum": ""
             },
             "require": {
@@ -331,7 +331,7 @@
                 "issues": "https://github.com/CAMPUSDIGITALID/CampusCMS/issues",
                 "source": "https://github.com/CAMPUSDIGITALID/CampusCMS/tree/v1.0.1"
             },
-            "time": "2023-05-03T02:56:08+00:00"
+            "time": "2023-05-05T08:44:20+00:00"
         },
         {
             "name": "composer/ca-bundle",

@@ -3,7 +3,7 @@
         'name' => 'laravel/laravel',
         'pretty_version' => 'dev-main',
         'version' => 'dev-main',
-        'reference' => 'e75902c62dfe000b998dc9a59633b31d6d0d3d13',
+        'reference' => '88e75038044f922d4559b2ff753f117886a87cb7',
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -58,7 +58,7 @@
         'campusdigital/campuscms' => array(
             'pretty_version' => 'v1.0.1',
             'version' => '1.0.1.0',
-            'reference' => 'd9a8072ac1d410f1f35bbe3be8d8c84e4ef1afc0',
+            'reference' => 'e3148634d7018d6ca183530b3499368814306932',
             'type' => 'library',
             'install_path' => __DIR__ . '/../campusdigital/campuscms',
             'aliases' => array(),
@@ -559,7 +559,7 @@
         'laravel/laravel' => array(
             'pretty_version' => 'dev-main',
             'version' => 'dev-main',
-            'reference' => 'e75902c62dfe000b998dc9a59633b31d6d0d3d13',
+            'reference' => '88e75038044f922d4559b2ff753f117886a87cb7',
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
@@ -1105,8 +1105,8 @@
         'psr/log-implementation' => array(
             'dev_requirement' => false,
             'provided' => array(
-                0 => '1.0|2.0',
-                1 => '1.0.0 || 2.0.0 || 3.0.0',
+                0 => '1.0.0 || 2.0.0 || 3.0.0',
+                1 => '1.0|2.0',
             ),
         ),
         'psr/simple-cache' => array(
