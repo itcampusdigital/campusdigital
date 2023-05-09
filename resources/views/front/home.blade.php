@@ -20,10 +20,12 @@
             </div>
             <div class="text-lg-start">
               <p style="text-align: center" class="fonttext mb-3">Mari bergabung bersama kami untuk mendapatkan ilmunya!</p>
-              <div class="text-center">
 
-                <a href="{{ route('auth.register') }}" class="btn btn-primary rounded-15 px-5 shadow-sm fw-bold">Daftar</a>
+              <div class="text-center">
+                {{-- <a href="{{ route('auth.register') }}" class="btn btn-primary rounded-15 px-5 shadow-sm fw-bold">Daftar Pelatihan</a> --}}
+                <a href="#" onClick="window.open('https://api.whatsapp.com/send?phone={{ setting('site.whatsapp') }}&text=Halo Campus Digital, saya butuh informasi tentang layanan Campus Digital...', '_blank')" class="btn btn-primary rounded-15 px-5 shadow-sm fw-bold">Daftar Pelatihan</a>
               </div>
+
             </div>
         </div>
         
@@ -40,7 +42,7 @@
 <section class="www">
   <div class="container">
     <div>
-      <div class="title mb-4 text-center">
+      <div class="title mb-4 mt-4 text-center">
         <h1>Program Kursus Reguler</h1>
       </div>
       {{-- <div class="owl-carousel owl-theme" id="programs1"> --}}
@@ -100,7 +102,7 @@
         </div>
         @endforeach
       </div>
-      <div class="text-center">
+      <div class="text-center mb-4">
         <a class="btn btn-primary" href="/program/kategori/profesi">Lihat Semua</a>
       </div>
     </div>
@@ -265,12 +267,12 @@
     <div class="row">
       <div class="col-12 text-center mb-3">
           <h2 class="mb-3">Dokumentasi</h2>
-          <span>Kumpulan dokumentasi setiap kegiatan Campus Digital</span>
+          <span style="font-size: 20px">Kegiatan Terbaru yang telah dilaksanakan</span>
       </div>
     </div>
     <div class="row align-items-center">
       <div class="dokumentasi col-md-6">
-        <img src="{{ asset('assets/images/dokumentasi/doc4.jpg') }}" class="img-fluid">
+        <img src="{{ image('assets/images/dokumentasi/'.$dokumentasi->gambar,'gallery') }}" class="img-fluid">
       </div>
       <div class="text-center col-lg-6 mt-3">
           <h2>Documentation for Each Activity</h2>

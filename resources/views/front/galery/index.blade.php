@@ -29,7 +29,9 @@
       <div class="col-lg-3 col-md-4 col-sm-6 mb-5">
         <div class="card border-0 shadow-sm">
           <div class="card-header bg-white text-center"><h5>{{ $gambars->judul_gambar }}</h5></div>
-          <img style="height:300px;width:300px" src="{{ asset('assets/images/dokumentasi/'.$gambars->gambar) }}">
+          <a class="popup-image" href="{{ image('assets/images/dokumentasi/'.$gambars->gambar,'gallery') }}" data-bs-toggle="tooltip" data-bs-placement="top" title="Klik untuk memperbesar">
+            <img style="height:300px;width:300px" src="{{ image('assets/images/dokumentasi/'.$gambars->gambar,'gallery') }}">
+          </a>
         </div>
       </div>
      
@@ -40,12 +42,12 @@
   </div>
 </section>
 
-
-
-
 @endsection
 
 @section('css-extra')
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.10.1/simple-lightbox.css" integrity="sha512-RCGG1PJuk9/28eeYNu0bIcQVnrpqe3B9iKGbnQLlNCDdJ2pYW3ru0I2MUen+qFTIUywPnNJDhoTsCg8Sjqrehg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link href="https://cdn.quilljs.com/1.3.6/quill.snow.css" rel="stylesheet">
 
 <style type="text/css">
   .info-text {padding-top: 0;}
@@ -70,5 +72,15 @@
   color: var(--primary);
 }
 </style>
+
+@endsection
+@section('js-extra')
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.10.1/simple-lightbox.jquery.min.js" integrity="sha512-/KPL35RUhlitNiujTD78F6lyczxSeUrAsdPdEgkktIfmV28iY51t1oLOfAGB7fOnci6tntAwFdVpkAvlcXt89Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script type="text/javascript">
+  var lightbox = $(".popup-image").simpleLightbox({
+   /* options */ 
+  });
+</script>
 
 @endsection

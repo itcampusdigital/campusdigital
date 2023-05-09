@@ -7,6 +7,7 @@ use Campusdigital\CampusCMS\Models\Mentor;
 use Campusdigital\CampusCMS\Models\Mitra;
 use Campusdigital\CampusCMS\Models\Program;
 use Campusdigital\CampusCMS\Models\Slider;
+use Campusdigital\CampusCMS\Models\Gallery;
 use App\User;
 
 class HomeController extends Controller
@@ -39,6 +40,9 @@ class HomeController extends Controller
 		// Data mitra
 		$mitra = Mitra::orderBy('order_mitra','asc')->get();
 
+        //last data from gallery
+        $gallery = Gallery::orderBy('id','desc')->first();
+
         // View
         return view('front.home', [
             'mitra' => $mitra,
@@ -47,6 +51,7 @@ class HomeController extends Controller
             'program_reguler' => $program_reguler,
             'program_corporate' => $program_corporate,
             'program_profesi' => $program_profesi,
+            'dokumentasi' => $gallery
 		]);
     }
 }
