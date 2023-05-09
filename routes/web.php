@@ -38,11 +38,6 @@ Route::get('/cabang', 'CabangController@index')->name('site.cabang.index');
 
 // Galery
 Route::get('/galery', 'CabangController@galery')->name('site.galery.index');
-Route::get('/galery/create', 'CabangController@create')->name('site.galery.create');
-Route::post('/galery/store', 'CabangController@store')->name('galery.store');
-Route::post('/galery/update/{id}', 'CabangController@update')->name('galery.update');
-Route::get('/galery/edit/{id}', 'CabangController@edit')->name('galery.edit');
-Route::get('/galery/delete/{id}', 'CabangController@delete')->name('galery.delete');
 
 // Halaman
 Route::get('/{permalink}', 'HalamanController@detail')->name('site.halaman.detail');

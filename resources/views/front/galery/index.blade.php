@@ -14,9 +14,6 @@
         <div class="jud">
           <h4 class="dok">Dokumentasi Pelatihan Campus Digital</h4>
         </div>
-		    @if(!Auth::guest() && Auth::user()->role == 1)
-          <a type="button" href={{ route('site.galery.create') }} class="btn btn-dark">Tambah Gambar</a>
-        @endif
       </div>
       <div class="col-lg-6 order-1 order-lg-2 mb-1 mb-lg-0 text-center">
         <img class="h-auto mb-3 mb-lg-0 img-header" src="{{asset('assets/images/illustration/min/5758.png')}}" alt="banner">
@@ -32,18 +29,7 @@
       <div class="col-lg-3 col-md-4 col-sm-6 mb-5">
         <div class="card border-0 shadow-sm">
           <div class="card-header bg-white text-center"><h5>{{ $gambars->judul_gambar }}</h5></div>
-          <img style="height:350px" src="{{ asset('assets/images/dokumentasi/'.$gambars->gambar) }}">
-          @if (!Auth::guest() && Auth::user()->id_user == 1)
-            <table>
-              <td>
-                <a href="{{ route('galery.edit',['id'=>$gambars->id]) }}" type="button" class="btn btn-info bok">Edit</a>
-              </td>
-              <td>
-                <a href="{{ route('galery.delete',['id'=>$gambars->id]) }}" type="button" class="btn btn-danger bok">Delete</a>
-              </td>
-            </table>
-          @endif
-          
+          <img style="height:300px;width:300px" src="{{ asset('assets/images/dokumentasi/'.$gambars->gambar) }}">
         </div>
       </div>
      
