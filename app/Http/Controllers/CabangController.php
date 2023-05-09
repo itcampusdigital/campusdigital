@@ -36,7 +36,7 @@ class CabangController extends Controller
         
 		referral($request->query('ref'), 'site.galery.index');
 		
-		$all_gambar = Gallery::orderBy('id')->paginate(8)->appends(request()->query());
+		$all_gambar = Gallery::orderBy('id','desc')->paginate(8)->appends(request()->query());
 		// View
 		return view('front.galery.index',[
             'gambarr' => $all_gambar,
