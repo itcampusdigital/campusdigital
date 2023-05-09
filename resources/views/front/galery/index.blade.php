@@ -27,13 +27,13 @@
     <div class="row">     
 		@foreach($gambarr as $gambars)
       <div class="col-lg-3 col-md-4 col-sm-6 mb-5">
+        <a class="popup-image" href="{{ image('assets/images/dokumentasi/'.$gambars->gambar,'gallery') }}" data-bs-toggle="tooltip" data-bs-placement="top" title="Klik untuk memperbesar">
         <div class="card border-0 shadow-sm">
           <div class="card-header bg-white text-center"><h5>{{ $gambars->judul_gambar }}</h5></div>
-          <a class="popup-image" href="{{ image('assets/images/dokumentasi/'.$gambars->gambar,'gallery') }}" data-bs-toggle="tooltip" data-bs-placement="top" title="Klik untuk memperbesar">
-            <img style="height:300px;width:300px" src="{{ image('assets/images/dokumentasi/'.$gambars->gambar,'gallery') }}">
-          </a>
+            <img src="{{ image('assets/images/dokumentasi/'.$gambars->gambar,'gallery') }}">
+          </div>
+        </a>
         </div>
-      </div>
      
 		@endforeach
     <div class="pagination justify-content-center">
