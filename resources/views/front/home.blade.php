@@ -22,8 +22,11 @@
               <p style="text-align: center" class="fonttext mb-3">Mari bergabung bersama kami untuk mendapatkan ilmunya!</p>
 
               <div class="text-center">
-                {{-- <a href="{{ route('auth.register') }}" class="btn btn-primary rounded-15 px-5 shadow-sm fw-bold">Daftar Pelatihan</a> --}}
-                <a href="#" onClick="window.open('https://api.whatsapp.com/send?phone={{ setting('site.whatsapp') }}&text=Halo Campus Digital, saya butuh informasi tentang layanan Campus Digital...', '_blank')" class="btn btn-primary rounded-15 px-5 shadow-sm fw-bold">Daftar Pelatihan</a>
+                @if(Auth::guest())
+                  <a href="{{ route('auth.register') }}" class="btn btn-primary rounded-15 px-5 shadow-sm fw-bold">Daftar</a>                
+                @else
+                  <a href="#" onClick="window.open('https://api.whatsapp.com/send?phone={{ setting('site.whatsapp') }}&text=Halo Campus Digital, saya butuh informasi tentang layanan Campus Digital...', '_blank')" class="btn btn-primary rounded-15 px-5 shadow-sm fw-bold">Daftar Pelatihan</a>
+                @endif
               </div>
 
             </div>
@@ -225,40 +228,42 @@
         <path d="M0,0V7.23C0,65.52,268.63,112.77,600,112.77S1200,65.52,1200,7.23V0Z" class="shape-fill"></path>
     </svg>
 </div>
-<section class="mitra-section bg-light">
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-12">
-        <div class="h-100 d-flex text-center" style="justify-content: center; align-items: center; width: 100%;">
-          <span >
-            <h2 class="mb-3">Mitra Kami</h2>
-            <span>Campus Digital telah dipercaya sebagai lembaga pelatihan digital marketing<br>dengan melahirkan SDM yang memiliki kompetensi.</span>
-          </span>
-        </div>
-      </div>
-      <div class="col-12">
-        <div class="feature-item">
-          <div class="d-block d-md-none">
-            <div class="owl-carousel owl-theme" id="mitra">
-      			  @foreach($mitra as $data)
-      				<div data-bs-toggle="tooltip" data-placement="bottom" title="{{ $data->nama_mitra }}">
-        				<img src="{{ asset('assets/images/mitra/'.$data->logo_mitra) }}" alt="Mitra Campusdigital">
-      				</div>
-      			  @endforeach
-            </div>
+<section class="mitra-section">
+  <div class="container ">
+    <div class="card custom mb-5 rounded-10">
+      <div class="row">
+        <div class="col-12">
+          <div class="h-100 d-flex text-center" style="justify-content: center; align-items: center; width: 100%;">
+            <span >
+              <h2 class="mb-3 mt-4">Mitra Kami</h2>
+              <span>Campus Digital telah dipercaya sebagai lembaga pelatihan digital marketing<br>dengan melahirkan SDM yang memiliki kompetensi.</span>
+            </span>
           </div>
-          <div class="mitra-lg container py-5 d-none d-md-block">
-            <div class="row text-center">
-              @foreach($mitra as $data)
-              <div class="col-2" data-bs-toggle="tooltip" data-placement="bottom" title="{{ $data->nama_mitra }}">
-                <img src="{{ asset('assets/images/mitra/'.$data->logo_mitra) }}" alt="Mitra Campusdigital">
+        </div>
+        <div class="col-12">
+          <div class="feature-item">
+            <div class="d-block d-md-none">
+              <div class="owl-carousel owl-theme" id="mitra">
+                @foreach($mitra as $data)
+                <div data-bs-toggle="tooltip" data-placement="bottom" title="{{ $data->nama_mitra }}">
+                  <img src="{{ asset('assets/images/mitra/'.$data->logo_mitra) }}" alt="Mitra Campusdigital">
+                </div>
+                @endforeach
               </div>
-              @endforeach
+            </div>
+            <div class="mitra-lg container py-5 d-none d-md-block">
+              <div class="row text-center">
+                @foreach($mitra as $data)
+                <div class="col-2" data-bs-toggle="tooltip" data-placement="bottom" title="{{ $data->nama_mitra }}">
+                  <img src="{{ asset('assets/images/mitra/'.$data->logo_mitra) }}" alt="Mitra Campusdigital">
+                </div>
+                @endforeach
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
+  </div>
   </div>
 </section>
 
@@ -403,11 +408,17 @@ $(document).ready(function() {
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.0.0/magnific-popup.min.css" integrity="sha512-nIm/JGUwrzblLex/meoxJSPdAKQOe2bLhnrZ81g5Jbh519z8GFJIWu87WAhBH+RAyGbM4+U3S2h+kL5JoV6/wA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 <style type="text/css">
   
+  .card.custom{
+    background-color: white;
+    box-shadow: 1px 1px 37px 8px rgba(231,160,247,0.44);
+    -webkit-box-shadow: 1px 1px 37px 8px rgba(231,160,247,0.44);
+    -moz-box-shadow: 1px 1px 37px 8px rgba(231,160,247,0.44);
+  }
+
   .img12{
     height: 100%;
     width: auto;
   }
-
 
 	.hero {max-width: 700px; background-position: center; background-size: cover; animation: up-down 1.5s ease-in-out infinite alternate-reverse both;}
 	@keyframes up-down {
