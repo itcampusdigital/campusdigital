@@ -286,17 +286,17 @@
         },
         {
             "name": "campusdigital/campuscms",
-            "version": "v1.2.1",
-            "version_normalized": "1.2.1.0",
+            "version": "v1.2.2",
+            "version_normalized": "1.2.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/CAMPUSDIGITALID/CampusCMS.git",
-                "reference": "436a23035814267eb337cec7e66413fe1cb0d601"
+                "reference": "f8f62a603a1989f36d4514948e49a5090e587501"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/CAMPUSDIGITALID/CampusCMS/zipball/436a23035814267eb337cec7e66413fe1cb0d601",
-                "reference": "436a23035814267eb337cec7e66413fe1cb0d601",
+                "url": "https://api.github.com/repos/CAMPUSDIGITALID/CampusCMS/zipball/f8f62a603a1989f36d4514948e49a5090e587501",
+                "reference": "f8f62a603a1989f36d4514948e49a5090e587501",
                 "shasum": ""
             },
             "require": {
@@ -313,7 +313,7 @@
                 "stevebauman/location": "^6.1",
                 "yajra/laravel-datatables-oracle": "~9.0"
             },
-            "time": "2023-06-14T04:38:54+00:00",
+            "time": "2023-06-14T07:32:02+00:00",
             "type": "library",
             "extra": {
                 "laravel": {
@@ -341,7 +341,7 @@
             "description": "Pengembangan ulang dari FaturCMS",
             "support": {
                 "issues": "https://github.com/CAMPUSDIGITALID/CampusCMS/issues",
-                "source": "https://github.com/CAMPUSDIGITALID/CampusCMS/tree/v1.2.1"
+                "source": "https://github.com/CAMPUSDIGITALID/CampusCMS/tree/v1.2.2"
             },
             "install-path": "../campusdigital/campuscms"
         },
