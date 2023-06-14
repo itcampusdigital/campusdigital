@@ -277,16 +277,16 @@
         },
         {
             "name": "campusdigital/campuscms",
-            "version": "v1.2.0",
+            "version": "v1.2.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/CAMPUSDIGITALID/CampusCMS.git",
-                "reference": "f2204b212a50629517457cc3c88c12c37072a2e4"
+                "reference": "436a23035814267eb337cec7e66413fe1cb0d601"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/CAMPUSDIGITALID/CampusCMS/zipball/f2204b212a50629517457cc3c88c12c37072a2e4",
-                "reference": "f2204b212a50629517457cc3c88c12c37072a2e4",
+                "url": "https://api.github.com/repos/CAMPUSDIGITALID/CampusCMS/zipball/436a23035814267eb337cec7e66413fe1cb0d601",
+                "reference": "436a23035814267eb337cec7e66413fe1cb0d601",
                 "shasum": ""
             },
             "require": {
@@ -329,9 +329,9 @@
             "description": "Pengembangan ulang dari FaturCMS",
             "support": {
                 "issues": "https://github.com/CAMPUSDIGITALID/CampusCMS/issues",
-                "source": "https://github.com/CAMPUSDIGITALID/CampusCMS/tree/v1.2.0"
+                "source": "https://github.com/CAMPUSDIGITALID/CampusCMS/tree/v1.2.1"
             },
-            "time": "2023-06-13T04:18:28+00:00"
+            "time": "2023-06-14T04:38:54+00:00"
         },
         {
             "name": "composer/ca-bundle",
