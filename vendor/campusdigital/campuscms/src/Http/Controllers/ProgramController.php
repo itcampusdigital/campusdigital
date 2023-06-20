@@ -142,7 +142,7 @@ class ProgramController extends Controller
     
         if($program->materi_desk != null){
             $decode_array_desk = json_decode($program->materi_desk, true);
-            $program->materi_desk = implode(',',$decode_array_desk);
+            $program->materi_desk = implode('/',$decode_array_desk);
         }
         // Kategori
         $kategori = KategoriProgram::all();
