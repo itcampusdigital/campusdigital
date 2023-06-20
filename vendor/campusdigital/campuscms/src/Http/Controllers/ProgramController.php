@@ -69,7 +69,7 @@ class ProgramController extends Controller
 
         //get array of materi program
         $materi = $request->program_materi;
-        $str_arr = explode (",", $materi); 
+        $str_arr = explode ("/", $materi); 
         $json_materi = json_encode($str_arr);
 
         // Validasi
@@ -174,7 +174,7 @@ class ProgramController extends Controller
 
         //get array of materi program
         $materi = $request->program_materi;
-        $str_arr = explode (",", $materi); 
+        $str_arr = explode ("/", $materi); 
         $json_materi = json_encode($str_arr);
 
         // Validasi
