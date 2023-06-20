@@ -64,12 +64,12 @@ class ProgramController extends Controller
 
         //get array of deskripsi materi program
         $mtr_desk = $request->materi_desk;
-        $str_desk = explode(",", $mtr_desk);
+        $str_desk = explode("/", $mtr_desk);
         $json_desk = json_encode($str_desk);
 
         //get array of materi program
         $materi = $request->program_materi;
-        $str_arr = explode ("/", $materi); 
+        $str_arr = explode (",", $materi); 
         $json_materi = json_encode($str_arr);
 
         // Validasi
@@ -169,12 +169,12 @@ class ProgramController extends Controller
 
         //get array from materi description
         $mtr_desk = $request->materi_desk;
-        $str_desk = explode(",", $mtr_desk);
+        $str_desk = explode("/", $mtr_desk);
         $json_desk = json_encode($str_desk);
 
         //get array of materi program
         $materi = $request->program_materi;
-        $str_arr = explode ("/", $materi); 
+        $str_arr = explode (",", $materi); 
         $json_materi = json_encode($str_arr);
 
         // Validasi
