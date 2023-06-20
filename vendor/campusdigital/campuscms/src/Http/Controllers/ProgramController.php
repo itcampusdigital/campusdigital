@@ -64,7 +64,7 @@ class ProgramController extends Controller
 
         //get array of deskripsi materi program
         $mtr_desk = $request->materi_desk;
-        $str_desk = explode("/", $mtr_desk);
+        $str_desk = explode("//", $mtr_desk);
         $json_desk = json_encode($str_desk);
 
         //get array of materi program
@@ -142,7 +142,7 @@ class ProgramController extends Controller
     
         if($program->materi_desk != null){
             $decode_array_desk = json_decode($program->materi_desk, true);
-            $program->materi_desk = implode('/',$decode_array_desk);
+            $program->materi_desk = implode('//',$decode_array_desk);
         }
         // Kategori
         $kategori = KategoriProgram::all();
@@ -169,7 +169,7 @@ class ProgramController extends Controller
 
         //get array from materi description
         $mtr_desk = $request->materi_desk;
-        $str_desk = explode("/", $mtr_desk);
+        $str_desk = explode("//", $mtr_desk);
         $json_desk = json_encode($str_desk);
 
         //get array of materi program

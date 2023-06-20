@@ -140,7 +140,7 @@
   </section>
 <section>
   @if($program->price != null)
-  <div class="container mt-5 d-none">
+  <div class="container mt-5">
     <div class="row m-sm-5 m-md-5 text-center">
       <div class="col-12">
           <h2>
