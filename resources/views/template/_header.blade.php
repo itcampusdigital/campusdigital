@@ -24,7 +24,7 @@
 						<a class="dropdown-item text-wrap {{ strpos(Request::url(), '/visi-misi') ? 'active' : '' }}" href="/visi-misi">Visi & Misi</a>
 						<a class="dropdown-item text-wrap {{ strpos(Request::url(), '/budaya-kerja') ? 'active' : '' }}" href="/budaya-kerja">Budaya Kerja</a>
 						<a class="dropdown-item text-wrap {{ strpos(Request::url(), '/fasilitas-keunggulan') ? 'active' : '' }}" href="/fasilitas-keunggulan">Fasilitas & Keunggulan</a>
-						<a class="dropdown-item text-wrap {{ strpos(Request::url(), '/employ') ? 'active' : '' }}" href="/profil-pegawai">Profil Pegawai</a>
+						{{-- <a class="dropdown-item text-wrap {{ strpos(Request::url(), '/employ') ? 'active' : '' }}" href="/profil-pegawai">Profil Pegawai</a> --}}
 						{{-- <a class="dropdown-item text-wrap {{ strpos(Request::url(), '/kontak-kami') ? 'active' : '' }}" href="/kontak-kami">Kontak Kami</a> --}}
 					</div>
 				</li>
@@ -80,9 +80,6 @@
 					<ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarScrollingDropdown">
 					  <li><a class="dropdown-item" href="{{ Auth::user()->is_admin == 1 ? route('admin.dashboard') : route('member.dashboard') }}">Dashboard</a></li>
 					  <li><a class="dropdown-item" href="{{ Auth::user()->is_admin == 1 ? route('admin.profile') : route('member.profile') }}">Profil</a></li>
-					  @if(Auth::user()->id_user == 1)
-					  	<li><a class="dropdown-item" href="#">Setting Tambahan</a></li>
-					  @endif
 					  @if(Auth::user()->is_admin == 0)
 					  <li><a class="dropdown-item" href="{{ route('member.afiliasi.carajualan') }}">Afiliasi</a></li>
 					  @endif

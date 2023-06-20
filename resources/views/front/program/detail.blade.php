@@ -4,46 +4,174 @@
 
 @section('content')
 
-<section class="page-top-section page-program">
-  <div class="py-5 text-white" style="background-image: url('{{ asset('assets/images/background/b1bde199d76dd22fc49aa288b0d5ab10.svg') }}'); background-size: cover; background-repeat: no-repeat; filter: hue-rotate(45deg);">
+<section class="page-program">
+  <div class="py-5 text-white page-top-section " style="background-image: url('{{ asset('assets/images/background/b1bde199d76dd22fc49aa288b0d5ab10.svg') }}'); background-size: cover; background-repeat: no-repeat; filter: hue-rotate(45deg);">
     <div class="container">
       <div class="row">
         <div class="col-lg-8">
-          <h1 class="mb-3">{{ $program->program_title }}</h1>
+          <h1 class="mb-3">{{ ucwords($program->program_title) }}</h1>
           <p class="mb-5 badge bg-white text-body">{{ $program->kategori }}</p>
           <nav aria-label="breadcrumb">
             <ol class="breadcrumb py-2 px-3 rounded-2" style="background-color: background: rgb(255,255,255); background: linear-gradient(90deg, rgba(255,255,255,1) 10%, rgba(255,255,255,0) 80%);">
               <li class="breadcrumb-item"><a href="{{ route('site.home') }}">Beranda</a></li>
               <li class="breadcrumb-item"><a href="{{ route('site.program.index', ['category' => $program->slug]) }}">{{ $program->kategori }}</a></li>
-              <li class="breadcrumb-item text-dark" aria-current="page">{{ $program->program_title }}</li>
+              <li class="breadcrumb-item text-dark" aria-current="page">{{ ucwords($program->program_title) }}</li>
             </ol>
           </nav>
         </div>
-      </div>
-    </div>
-  </div>
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-8 order-2 order-lg-1">
-        <div class="ql-snow">
-          <div class="ql-editor">{!! html_entity_decode($program->konten) !!}</div>
-        </div>
-      </div>
-      <div class="col-lg-4 order-1 order-lg-2 stick position-relative px-0 px-md-3 h-100">
-        <div class="sticky-sidebar">
-          <div class="card rounded-1 border-0 shadow mb-3 mb-lg-0">
-            <a class="popup-image" href="{{ image('assets/images/program/'.$program->program_gambar, 'program') }}" data-bs-toggle="tooltip" data-bs-placement="top" title="Klik untuk memperbesar">
-              <img class="card-img-top" src="{{ image('assets/images/program/'.$program->program_gambar, 'program') }}" title="{{ $program->program_title }}">
-            </a>
-            <div class="card-body py-4">
-              <button class="btn btn-primary w-100 register-link">Daftar Sekarang</button>
-            </div>
-          </div>
-        </div>
+
       </div>
     </div>
   </div>
 </section>
+<section> 
+    <div class="container mt-5">
+      <div class="row m-sm-5 m-md-5 text-center">
+        <div class="card title page-manfaat">
+            <div class="mt-3">
+              <h2>
+                Pelatihan Cepat <br> <span style="color: red;font-size:calc(50% + 1vh + 1vw);">7 Hari Langsung Ujian</span>
+              </h2>
+            </div>
+            <div class="text-center mt-3">
+              <h3 class="py-4">
+                Sertifikasi <b>{{ ucwords($program->program_title) }}</b> BNSP
+              </h3>
+              <p class="size-manfaat mb-5" style="margin-left: 20%;margin-right:20%">
+                Progam Pembelajaran Online Via Zoom Meet atau Offline Tatap Muka Untuk Anda Yang Membutuhkan Sertifikat BNSP di Bidang {{ ucwords($program->program_title) }}
+              </p>
+            </div>
+
+          </div>
+          <div class="button-daftar mt-5 mb-5">
+            <a href="#form-registration" type="button" class="btn btn-danger size-title rounded-4"><b>DAFTAR SEKARANG</b></a>
+        </div>
+        <hr>
+      </div>
+    </div>
+    
+  <div style="background-image: url('{{ asset('assets/images/background/s.svg') }}'); background-size: cover;background-repeat: no-repeat;">
+    <div class="container">
+      <div class="row">
+        {{-- <div class="g"> --}}
+          <div class="g" style="margin-left:35px">
+            <h3 class="mb-5 mt-3 size-title" style="text-align: center">
+              Mengapa Harus Menguasai <br> <span style="color: red">{{ ucwords($program->program_title) }} ?</span>
+            </h3>
+             
+            <div class="col-lg-12">
+              <div class="mb-5">
+                <div class="ql-editor size-description">{!! $program->konten !!}</div>
+              </div>
+            </div>
+                     
+          </div>
+        {{-- </div> --}}
+      </div>
+    </div>
+  </div>
+</section>
+<section>
+  <div style="background-image: url('{{ asset('assets/images/background/vvv.svg') }}');background-size: cover; background-repeat: no-repeat;">
+    <div class="container">
+      <div class="row ">
+        {{-- <div class="h">
+          <div class="h "> --}}
+              <h3 class="mb-4 mt-3 size-title" style="text-align: center">
+                Manfaat Pelatihan <span style="color: red">{{ ucwords($program->program_title) }}</span>
+              </h3>
+              
+              <div class="col-lg-12 col-md-12">
+                <div class="ql-snow mb-4">
+                  <div class="ql-editor size-description" style="margin-right:50px">{!! html_entity_decode($program->program_manfaat) !!}</div>
+                </div>
+              </div>
+              
+
+            {{-- </div>
+        </div> --}}
+      </div>
+    </div>
+  </div>
+</section>
+
+  <section>
+    <div class="container">
+      <div class="row m-md-3 m-sm-3">
+        <div class="card title">
+              <h3 class="mb-4 mt-3" style="text-align: center">
+                Materi Pelatihan <span style="color: red">{{ ucwords($program->program_title) }}</span>
+              </h3>
+              <div class="row p-lg-4 p-md-2 p-sm-1">
+                @if ($count != null)
+                  @for ($i=0;$i<$count;$i++)
+                    <div class="col-lg-4 col-sm-6">
+                      <div class="card border-0 shadow-sm mb-4 size-manfaat">
+                        <div class="card-header rounded-15 border-0 page-manfaat" id="headingOne">
+                          <h2 class="mb-0">
+                            <button class="btn btn-block text-start d-flex align-items-center justify-content-between btn-collapse collapsed size-manfaat" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                <b>
+                                  {{ ucwords($program->program_materi[$i]) }}
+                                </b>
+                            <i class="fa fa-angle-up"></i>
+                            </button>
+                          </h2>
+                        </div>
+                        <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                          <div class="card-body">
+                                <p>
+                                  {{ ucwords($program->materi_desk[$i]) }}
+                                </p>
+                          </div>
+                        </div>
+                      </div>            
+                    </div>
+                  @endfor
+                @endif
+              </div>  
+        </div>
+      </div>
+    </div>
+  </section>
+<section>
+  <div class="container mt-5">
+    <div class="row m-sm-5 m-md-5 text-center">
+      <div class="col-12">
+          <h2>
+            Berapa Biaya Investasi Pelatihan <br> <span style="color: red">{{ ucwords($program->program_title) }} ? </span>
+          </h2>
+      </div>
+    </div>
+    <div class="text-center mt-5 mb-5">
+      <h3 style="color: green">
+        <s>{{ number_format($program->price) }}</s>
+      </h3>
+      <h1 class="mt-3 mb-4" style="color: red">
+        {{ number_format($program->price - ($program->price * 25 / 100)) }}
+      </h1>
+      <h3>
+        Termasuk Biaya Sertifikasi <br>BNSP
+      </h3>
+    </div>
+  </div>
+
+</section>
+{{-- <section class="mt-4 pt-4">
+  <div class="container">
+    <div class="row">
+      <div class="card title">
+        <div class="card-body">
+            <h3 class="mb-4 mt-3" style="text-align: center">
+              Apa itu Pelatihan <span style="color: red">{{ $program->program_title }}</span>
+            </h3>
+            <div class="ql-snow mb-4">
+              <div class="ql-editor">{!! $program->konten !!}</div>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section> --}}
 <section class="bg-light py-5">
   <div class="container">
     <div class="row align-items-center">
@@ -111,8 +239,28 @@
   .ql-editor h3 {margin-bottom: 1rem!important; font-weight: 600!important;}
   .ql-editor ol {padding-left: 15px!important;}
   .ql-editor ol {margin-bottom: 1rem!important;}
+  .ql-editor li {margin-bottom: 1rem!important;line-height: 1.5!important}
   .ql-editor p {margin-bottom: 1rem!important;}
   .card-img-top{border-radius: 0;}
+
+
+
+  .size-title{
+    font-size: calc(30% + 1vw + 1vh );
+  }
+  .size-description{
+    font-size: calc(0.8vw + 1vh);
+  }
+  .size-manfaat{
+    font-size:calc(5% + 1vw );
+  }
+  .title{
+    box-shadow: 0px 10px 20px 0px rgba(0,0,0,0.3);
+    -webkit-box-shadow: 0px 10px 20px 0px rgba(0,0,0,0.3);
+    -moz-box-shadow: 0px 10px 20px 0px rgba(0,0,0,0.3);
+  }
+  .page-manfaat{background-color: rgba(239, 228, 250, 0.952);}
+  .space {vertical-align:middle;margin-top: 20px;}
 </style>
 
 @endsection

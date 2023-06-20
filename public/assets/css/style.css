@@ -20,7 +20,7 @@
 	--blue-f: invert(58%) sepia(40%) saturate(6271%) hue-rotate(154deg) brightness(95%) contrast(82%);
 	--yellow-f: invert(88%) sepia(25%) saturate(5407%) hue-rotate(350deg) brightness(101%) contrast(105%);
 }
-html, body {}
+
 html{scroll-behavior: smooth;}
 a {text-decoration: none;}
 [v-cloak] { display: none; }
@@ -338,4 +338,3 @@ fill: #FFF;
 .btn-priority-2{background-color: var(--primary-s);}
 .btn-non-priority1{background-color: var(--secondary);}
 .btn-non-priority2{background-color: var(--secondary-s);}
-.hehehe{}

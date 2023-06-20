@@ -49,9 +49,19 @@ class ProgramController extends Controller
         // Data program
         $program = Program::join('users','program.author','=','users.id_user')->join('kategori_program','program.program_kategori','=','kategori_program.id_kp')->where('program_permalink','=',$permalink)->firstOrFail();
 
+        $program->program_materi = json_decode($program->program_materi, true);
+        $program->materi_desk = json_decode($program->materi_desk, true);
+        if($program->program_materi != null){
+            $count = count($program->program_materi);
+        }
+        else{
+            $count = null;
+        }
+        
         // View
         return view('front.program.detail', [
-            'program' => $program
+            'program' => $program,
+            'count' => $count
         ]);
     }
 
