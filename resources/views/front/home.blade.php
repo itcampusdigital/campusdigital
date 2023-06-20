@@ -56,7 +56,7 @@
             <img src="{{ image('assets/images/program/'.$data->program_gambar, 'program') }}" class="card-img-top w-100 owl-lazy">
             <div class="card-body">
               <p class="fw-bold text-truncate d-block">{{ $data->program_title }}</p>
-              <p class="text-truncate-3 d-none d-md-box">{{ substr(strip_tags(html_entity_decode($data->konten)),0,100).'...' }} </p>
+              <p class="text-truncate-3 d-none d-md-box">{{ substr(strip_tags(html_entity_decode($data->program_manfaat)),0,100).'...' }} </p>
               <a href="/program/{{ $data->program_permalink }}" class="btn btn-primary">Selengkapnya</a>
             </div>
           </div>
@@ -77,7 +77,7 @@
             <img src="{{ image('assets/images/program/'.$data->program_gambar, 'program') }}" class="card-img-top w-100 owl-lazy">
             <div class="card-body">
               <p class="fw-bold text-truncate d-block">{{ $data->program_title }}</p>
-              <p class="text-truncate-3 d-none d-md-box">{{ substr(strip_tags(html_entity_decode($data->konten)),0,100).'...' }} </p>
+              <p class="text-truncate-3 d-none d-md-box">{{ substr(strip_tags(html_entity_decode($data->program_manfaat)),0,100).'...' }} </p>
               <a href="/program/{{ $data->program_permalink }}" class="btn btn-primary">Selengkapnya</a>
             </div>
           </div>
@@ -98,7 +98,7 @@
             <img src="{{ image('assets/images/program/'.$data->program_gambar, 'program') }}" class="card-img-top w-100 owl-lazy">
             <div class="card-body">
               <p class="fw-bold text-truncate d-block">{{ $data->program_title }}</p>
-              <p class="text-truncate-3 d-none d-md-box">{{ substr(strip_tags(html_entity_decode($data->konten)),0,100).'...' }} </p>
+              <p class="text-truncate-3 d-none d-md-box">{{ substr(strip_tags(html_entity_decode($data->program_manfaat)),0,100).'...' }} </p>
               <a href="/program/{{ $data->program_permalink }}" class="btn btn-primary">Selengkapnya</a>
             </div>
           </div>

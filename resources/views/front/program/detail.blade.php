@@ -50,7 +50,8 @@
       </div>
     </div>
     
-  <div style="background-image: url('{{ asset('assets/images/background/s.svg') }}'); background-size: cover;background-repeat: no-repeat;">
+    
+  <div class="{{ $program->konten == null ? 'd-none' : '' }}" style="background-image: url('{{ asset('assets/images/background/s.svg') }}'); background-size: cover;background-repeat: no-repeat;">
     <div class="container">
       <div class="row">
         {{-- <div class="g"> --}}
@@ -96,7 +97,11 @@
 </section>
 
   <section>
+    @if($program->program_materi == null)
+    <div class="container d-none">
+    @else
     <div class="container">
+    @endif
       <div class="row m-md-3 m-sm-3">
         <div class="card title">
               <h3 class="mb-4 mt-3" style="text-align: center">
@@ -134,7 +139,8 @@
     </div>
   </section>
 <section>
-  <div class="container mt-5">
+  @if($program->price != null)
+  <div class="container mt-5 d-none">
     <div class="row m-sm-5 m-md-5 text-center">
       <div class="col-12">
           <h2>
@@ -144,17 +150,19 @@
     </div>
     <div class="text-center mt-5 mb-5">
       <h3 style="color: green">
-        <s>{{ number_format($program->price) }}</s>
+        <s>{{ $program->price[0] }}</s>
       </h3>
       <h1 class="mt-3 mb-4" style="color: red">
-        {{ number_format($program->price - ($program->price * 25 / 100)) }}
+        {{ $program->price[1] }}
       </h1>
       <h3>
         Termasuk Biaya Sertifikasi <br>BNSP
       </h3>
     </div>
   </div>
-
+  @else
+    <div class="container mt-5 d-none"></div>
+  @endif
 </section>
 {{-- <section class="mt-4 pt-4">
   <div class="container">

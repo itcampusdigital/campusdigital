@@ -51,17 +51,13 @@ class ProgramController extends Controller
 
         $program->program_materi = json_decode($program->program_materi, true);
         $program->materi_desk = json_decode($program->materi_desk, true);
-        if($program->program_materi != null){
-            $count = count($program->program_materi);
-        }
-        else{
-            $count = null;
-        }
-        
+        $program->price = json_decode($program->price,true);
+       
+        $count = $program->program_materi != null ? count($program->program_materi) : null;
         // View
         return view('front.program.detail', [
             'program' => $program,
-            'count' => $count
+            'count' => $count,
         ]);
     }
 
