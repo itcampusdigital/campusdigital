@@ -23,7 +23,7 @@
 		</div>
 	</div>
 </footer>
-<div class="fixed-bottom d-flex align-items-center justify-content-end text-end fab-wa" style="width: fit-content; left: unset;">
+<div class="fixed-bottom d-flex align-items-center justify-content-end text-end fab-wa" style="width: fit-content; left: unset;margin-right:20px">
 	<a href="#" onClick="window.open('https://api.whatsapp.com/send?phone={{ setting('site.whatsapp') }}&text=Halo Campus Digital, saya butuh informasi tentang layanan Campus Digital...', '_blank')" class="text-decoration-none text-body">
 		<div class="bg-white shadow-sm px-3 py-2 me-2 rounded-3" style="width: fit-content; animation: fab 2s infinite ease">
 			<span class="font-weight-bold">Hubungi Kami</span>

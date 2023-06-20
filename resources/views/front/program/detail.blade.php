@@ -33,30 +33,30 @@
                 Pelatihan Cepat <br> <span style="color: red;font-size:calc(50% + 1vh + 1vw);">7 Hari Langsung Ujian</span>
               </h2>
             </div>
-            <div class="text-center mt-3">
-              <h3 class="py-4">
+            <div class="card-body text-center mt-3">
+              <h3>
                 Sertifikasi <b>{{ ucwords($program->program_title) }}</b> BNSP
               </h3>
-              <p class="size-manfaat mb-5" style="margin-left: 20%;margin-right:20%">
+              <img style="max-width: 300px;max-height:200px" class="card-img" src="{{ asset('assets/images/bnsp/logo_bnsp.png') }}" alt="BNSP-LOGO">
+              <p class="size-manfaat mb-5" >
                 Progam Pembelajaran Online Via Zoom Meet atau Offline Tatap Muka Untuk Anda Yang Membutuhkan Sertifikat BNSP di Bidang {{ ucwords($program->program_title) }}
               </p>
             </div>
 
           </div>
-          <div class="button-daftar mt-5 mb-5">
+          <div class="button-daftar mt-3 mb-3 mt-md-5 mb-md-5 mt-sm-4 mb-sm-2">
             <a href="#form-registration" type="button" class="btn btn-danger size-title rounded-4"><b>DAFTAR SEKARANG</b></a>
         </div>
         <hr>
       </div>
-    </div>
-    
-    
-  <div class="{{ $program->konten == null ? 'd-none' : '' }}" style="background-image: url('{{ asset('assets/images/background/s.svg') }}'); background-size: cover;background-repeat: no-repeat;">
-    <div class="container">
-      <div class="row">
+    </div> 
+  <div class="card border-0">
+    <div class="{{ $program->konten == null ? 'd-none' : '' }}" style="background-image: url('{{ asset('assets/images/background/s.svg') }}'); background-size: cover;background-repeat: no-repeat;">
+      <div class="container">
+        <div class="row">
         {{-- <div class="g"> --}}
-          <div class="g" style="margin-left:35px">
-            <h3 class="mb-5 mt-3 size-title" style="text-align: center">
+          <div class="card-body" style="margin-left:35px">
+            <h3 class="mb-5 mt-md-3 size-title" style="text-align: center">
               Mengapa Harus Menguasai <br> <span style="color: red">{{ ucwords($program->program_title) }} ?</span>
             </h3>
              
@@ -65,32 +65,30 @@
                 <div class="ql-editor size-description">{!! $program->konten !!}</div>
               </div>
             </div>
-                     
           </div>
-        {{-- </div> --}}
+          {{-- </div> --}}
+        </div>
       </div>
     </div>
   </div>
 </section>
 <section>
-  <div style="background-image: url('{{ asset('assets/images/background/vvv.svg') }}');background-size: cover; background-repeat: no-repeat;">
-    <div class="container">
-      <div class="row ">
-        {{-- <div class="h">
-          <div class="h "> --}}
-              <h3 class="mb-4 mt-3 size-title" style="text-align: center">
-                Manfaat Pelatihan <span style="color: red">{{ ucwords($program->program_title) }}</span>
-              </h3>
-              
-              <div class="col-lg-12 col-md-12">
-                <div class="ql-snow mb-4">
-                  <div class="ql-editor size-description" style="margin-right:50px">{!! html_entity_decode($program->program_manfaat) !!}</div>
+  <div class="card border-0">
+    <div style="background-image: url('{{ asset('assets/images/background/vvv.svg') }}');background-size: cover; background-repeat: no-repeat;">
+      <div class="container">
+        <div class="row ">
+            <div class="card-body">
+                <h3 class="mb-md-4 mt-md-3 size-title" style="text-align: center ">
+                  Manfaat Pelatihan <span style="color: red">{{ ucwords($program->program_title) }}</span>
+                </h3>
+                
+                <div class="col-lg-12 col-md-12">
+                  <div class="ql-snow mb-4">
+                    <div class="ql-editor size-description mx-md-5 mx-sm-3">{!! html_entity_decode($program->program_manfaat) !!}</div>
+                  </div>
                 </div>
               </div>
-              
-
-            {{-- </div>
-        </div> --}}
+        </div>
       </div>
     </div>
   </div>
@@ -260,7 +258,7 @@
     font-size: calc(0.8vw + 1vh);
   }
   .size-manfaat{
-    font-size:calc(5% + 1vw );
+    font-size:calc(5% + 0.5vw + 1vh);
   }
   .title{
     box-shadow: 0px 10px 20px 0px rgba(0,0,0,0.3);
