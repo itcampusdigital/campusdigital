@@ -44,8 +44,8 @@
             </div>
 
           </div>
-          <div class="button-daftar mt-3 mb-3 mt-md-5 mb-md-5 mt-sm-4 mb-sm-2">
-            <a href="#form-registration" type="button" class="btn btn-danger size-title rounded-4"><b>DAFTAR SEKARANG</b></a>
+          <div class="button-daftar my-5 mt-md-5 mb-md-5 my-sm-5">
+            <a href="#form-registration" type="button" class="px-4 btn btn-new-danger size-title rounded-4"><b>DAFTAR SEKARANG</b></a>
         </div>
         <hr>
       </div>
@@ -110,17 +110,18 @@
                   @for ($i=0;$i<$count;$i++)
                     <div class="col-lg-4 col-sm-6">
                       <div class="card border-0 shadow-sm mb-4 size-manfaat">
-                        <div class="card-header rounded-15 border-0 page-manfaat" id="headingOne">
+                        <div class="card-header rounded-15 border-0 page-manfaat d-flex justify-content-between" id="headingOne">
                           <h2 class="mb-0">
-                            <button class="btn btn-block text-start d-flex align-items-center justify-content-between btn-collapse collapsed size-manfaat" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                            <button class="btn btn-block text-start d-flex align-items-center justify-content-between btn-collapse collapsed size-manfaat" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOnes" aria-expanded="false" aria-controls="collapseOnes">
                                 <b>
                                   {{ ucwords($program->program_materi[$i]) }}
                                 </b>
-                            <i class="fa fa-angle-up"></i>
+                                <i class="fa fa-angle-up"></i>
                             </button>
                           </h2>
+                          {{-- <i style="margin-top: 10px" class="fa fa-angle-up text-end"></i> --}}
                         </div>
-                        <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                        <div id="collapseOnes" class="collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                           <div class="card-body">
                                 <p>
                                   {{ ucwords($program->materi_desk[$i]) }}
@@ -248,6 +249,16 @@
   .ql-editor li {margin-bottom: 1rem!important;line-height: 1.5!important}
   .ql-editor p {margin-bottom: 1rem!important;}
   .card-img-top{border-radius: 0;}
+
+  
+  .btn-new-danger{
+    background-color: #f9c7c7;
+    color: #ff0000
+  }
+  .btn-new-danger:hover{
+    background-color: #ff0000;
+    color: white;
+  }
 
 
 
