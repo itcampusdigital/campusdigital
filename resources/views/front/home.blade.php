@@ -52,8 +52,8 @@
                 <div>
                     <div class="title mb-4 mt-4 text-center">
                         <h1>Program Kursus Reguler</h1>
-                        <p>Program Reguler adalah program yang diberikan untuk menunjang kebutuhan pekerjaan dalam dunia
-                            digital </p>
+                        {{-- <p>Program Reguler adalah program yang diberikan untuk menunjang kebutuhan pekerjaan dalam dunia
+                            digital </p> --}}
                     </div>
                     {{-- <div class="owl-carousel owl-theme" id="programs1"> --}}
                     <div class="row">
