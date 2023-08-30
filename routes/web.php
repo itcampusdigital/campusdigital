@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\WaSendController;
 
 /*
 |--------------------------------------------------------------------------
@@ -15,6 +16,10 @@ use Illuminate\Support\Facades\Route;
 
 // Letakkan fungsi ini pada route paling atas
 \Campusdigital\CampusCMS\FaturCMS::routes();
+
+//tes send wa
+Route::get('/send',[WaSendController::class,'index'])->name('wa.send');
+
 // Home
 Route::get('/', 'HomeController@index')->name('site.home');
 

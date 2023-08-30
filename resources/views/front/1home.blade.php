@@ -17,7 +17,7 @@
         </div>
     </div>
     <div class="col-lg-6 text-center">
-	{{-<img src="{{ asset('assets/images/background/1.png') }}" alt="" class="hero" >--}}
+	{{-- {{<img src="{{ asset('assets/images/background/1.png') }}" alt="" class="hero" >}} --}}
     {{--<div class="card shadow border-0 front-card-zoom">
           <div class="card-header d-flex align-items-center justify-content-end">
             <i class="fa fa-circle px-1 text-success"></i>
