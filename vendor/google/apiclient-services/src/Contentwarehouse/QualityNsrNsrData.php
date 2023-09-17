@@ -37,6 +37,10 @@ class QualityNsrNsrData extends \Google\Collection
    */
   public $chardVariance;
   /**
+   * @var float
+   */
+  public $chromeInTotal;
+  /**
    * @var int
    */
   public $clusterId;
@@ -122,6 +126,10 @@ class QualityNsrNsrData extends \Google\Collection
    * @var float
    */
   public $pnav;
+  /**
+   * @var float
+   */
+  public $pnavClicks;
   protected $priorAdjustedNsrType = QualityNsrVersionedFloatSignal::class;
   protected $priorAdjustedNsrDataType = 'array';
   /**
@@ -178,8 +186,6 @@ class QualityNsrNsrData extends \Google\Collection
    * @var string
    */
   public $url;
-  protected $versionedAsrDataType = QualityNsrVersionedFloatSignal::class;
-  protected $versionedAsrDataDataType = 'array';
   protected $versionedDataType = QualityNsrNSRVersionedData::class;
   protected $versionedDataDataType = 'array';
   /**
@@ -254,6 +260,20 @@ class QualityNsrNsrData extends \Google\Collection
   public function getChardVariance()
   {
     return $this->chardVariance;
+  }
+  /**
+   * @param float
+   */
+  public function setChromeInTotal($chromeInTotal)
+  {
+    $this->chromeInTotal = $chromeInTotal;
+  }
+  /**
+   * @return float
+   */
+  public function getChromeInTotal()
+  {
+    return $this->chromeInTotal;
   }
   /**
    * @param int
@@ -578,6 +598,20 @@ class QualityNsrNsrData extends \Google\Collection
     return $this->pnav;
   }
   /**
+   * @param float
+   */
+  public function setPnavClicks($pnavClicks)
+  {
+    $this->pnavClicks = $pnavClicks;
+  }
+  /**
+   * @return float
+   */
+  public function getPnavClicks()
+  {
+    return $this->pnavClicks;
+  }
+  /**
    * @param QualityNsrVersionedFloatSignal[]
    */
   public function setPriorAdjustedNsr($priorAdjustedNsr)
@@ -786,20 +820,6 @@ class QualityNsrNsrData extends \Google\Collection
   public function getUrl()
   {
     return $this->url;
-  }
-  /**
-   * @param QualityNsrVersionedFloatSignal[]
-   */
-  public function setVersionedAsrData($versionedAsrData)
-  {
-    $this->versionedAsrData = $versionedAsrData;
-  }
-  /**
-   * @return QualityNsrVersionedFloatSignal[]
-   */
-  public function getVersionedAsrData()
-  {
-    return $this->versionedAsrData;
   }
   /**
    * @param QualityNsrNSRVersionedData[]

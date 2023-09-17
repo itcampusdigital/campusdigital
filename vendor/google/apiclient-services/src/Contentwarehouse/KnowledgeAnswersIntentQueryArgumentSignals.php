@@ -100,10 +100,13 @@ class KnowledgeAnswersIntentQueryArgumentSignals extends \Google\Collection
    * @var bool
    */
   public $isNimbleAnnotation;
-  protected $locationType = GeostorePointProto::class;
   protected $locationDataType = '';
   protected $locationMarkersSignalsType = KnowledgeAnswersIntentQueryLocationMarkersSignals::class;
   protected $locationMarkersSignalsDataType = '';
+  /**
+   * @var string
+   */
+  public $locationType;
   protected $mediaEntitySignalsType = KnowledgeAnswersIntentQueryMediaEntitySignals::class;
   protected $mediaEntitySignalsDataType = '';
   protected $mergedImpliedEntityType = KnowledgeAnswersIntentQueryImpliedEntity::class;
@@ -154,6 +157,8 @@ class KnowledgeAnswersIntentQueryArgumentSignals extends \Google\Collection
    * @var bool
    */
   public $resolvedFromPronoun;
+  protected $responseMeaningSignalsType = KnowledgeAnswersIntentQueryResponseMeaningSignalsResponseMeaningSignals::class;
+  protected $responseMeaningSignalsDataType = '';
   protected $resultSupportType = UniversalsearchNewPackerKnowledgeResultSupport::class;
   protected $resultSupportDataType = 'array';
   protected $saftSignalsType = KnowledgeAnswersIntentQuerySaftSignals::class;
@@ -540,6 +545,20 @@ class KnowledgeAnswersIntentQueryArgumentSignals extends \Google\Collection
     return $this->locationMarkersSignals;
   }
   /**
+   * @param string
+   */
+  public function setLocationType($locationType)
+  {
+    $this->locationType = $locationType;
+  }
+  /**
+   * @return string
+   */
+  public function getLocationType()
+  {
+    return $this->locationType;
+  }
+  /**
    * @param KnowledgeAnswersIntentQueryMediaEntitySignals
    */
   public function setMediaEntitySignals(KnowledgeAnswersIntentQueryMediaEntitySignals $mediaEntitySignals)
@@ -776,6 +795,20 @@ class KnowledgeAnswersIntentQueryArgumentSignals extends \Google\Collection
   public function getResolvedFromPronoun()
   {
     return $this->resolvedFromPronoun;
+  }
+  /**
+   * @param KnowledgeAnswersIntentQueryResponseMeaningSignalsResponseMeaningSignals
+   */
+  public function setResponseMeaningSignals(KnowledgeAnswersIntentQueryResponseMeaningSignalsResponseMeaningSignals $responseMeaningSignals)
+  {
+    $this->responseMeaningSignals = $responseMeaningSignals;
+  }
+  /**
+   * @return KnowledgeAnswersIntentQueryResponseMeaningSignalsResponseMeaningSignals
+   */
+  public function getResponseMeaningSignals()
+  {
+    return $this->responseMeaningSignals;
   }
   /**
    * @param UniversalsearchNewPackerKnowledgeResultSupport[]

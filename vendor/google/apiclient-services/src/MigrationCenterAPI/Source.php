@@ -32,9 +32,13 @@ class Source extends \Google\Model
    */
   public $displayName;
   /**
+   * @var int
+   */
+  public $errorFrameCount;
+  /**
    * @var bool
    */
-  public $isManaged;
+  public $managed;
   /**
    * @var string
    */
@@ -103,18 +107,32 @@ class Source extends \Google\Model
     return $this->displayName;
   }
   /**
+   * @param int
+   */
+  public function setErrorFrameCount($errorFrameCount)
+  {
+    $this->errorFrameCount = $errorFrameCount;
+  }
+  /**
+   * @return int
+   */
+  public function getErrorFrameCount()
+  {
+    return $this->errorFrameCount;
+  }
+  /**
    * @param bool
    */
-  public function setIsManaged($isManaged)
+  public function setManaged($managed)
   {
-    $this->isManaged = $isManaged;
+    $this->managed = $managed;
   }
   /**
    * @return bool
    */
-  public function getIsManaged()
+  public function getManaged()
   {
-    return $this->isManaged;
+    return $this->managed;
   }
   /**
    * @param string
