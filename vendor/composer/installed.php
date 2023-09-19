@@ -5,7 +5,7 @@
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
-        'reference' => '2885e7274837ea402254cad5c5c17f45641e1dc1',
+        'reference' => '232d8cb6634ffecfb373c5a5dc698e85b001cacf',
         'name' => 'laravel/laravel',
         'dev' => true,
     ),
@@ -56,12 +56,12 @@
             'dev_requirement' => false,
         ),
         'campusdigital/campuscms' => array(
-            'pretty_version' => 'v1.3.1',
-            'version' => '1.3.1.0',
+            'pretty_version' => 'v1.3.2',
+            'version' => '1.3.2.0',
             'type' => 'library',
             'install_path' => __DIR__ . '/../campusdigital/campuscms',
             'aliases' => array(),
-            'reference' => 'ade7c9a7e38d4e2ff95d13f4fbcaf94a942ecd57',
+            'reference' => '5c0075200b1228fba2e350b72eba7c96f2907ab4',
             'dev_requirement' => false,
         ),
         'composer/ca-bundle' => array(
@@ -562,7 +562,7 @@
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
-            'reference' => '2885e7274837ea402254cad5c5c17f45641e1dc1',
+            'reference' => '232d8cb6634ffecfb373c5a5dc698e85b001cacf',
             'dev_requirement' => false,
         ),
         'laravel/sanctum' => array(
