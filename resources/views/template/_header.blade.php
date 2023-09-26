@@ -45,6 +45,7 @@
 						<a class="dropdown-item text-wrap {{ strpos(Request::url(), '/program/kategori/corporate') ? 'active' : '' }}" href="/program/kategori/corporate">Corporate</a>
 						<a class="dropdown-item text-wrap {{ strpos(Request::url(), '/program/kategori/profesi') ? 'active' : '' }}" href="/program/kategori/profesi">Profesi</a>
 						<a class="dropdown-item text-wrap {{ strpos(Request::url(), '/program/kategori/sertifikasi') ? 'active' : '' }}" href="/program/kategori/sertifikasi">Sertifikasi</a>
+						<a class="dropdown-item text-wrap {{ strpos(Request::url(), '/mitra') ? 'active' : '' }}" href="/mitra">Magang/Intern Program</a>
 					</div>
 				</li>
 				<li class="nav-item {{ is_int(strpos(Request::url(), route('site.halaman.detail', ['permalink' => 'afiliasi']))) ? 'active' : '' }}">

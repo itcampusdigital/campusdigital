@@ -3,8 +3,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use Campusdigital\CampusCMS\Models\Halaman;
 use Campusdigital\CampusCMS\Models\Mentor;
+use Campusdigital\CampusCMS\Models\Halaman;
+use Campusdigital\CampusCMS\Models\Program;
 
 class HalamanController extends Controller
 {
@@ -25,6 +26,14 @@ class HalamanController extends Controller
 
         // Data mentor
         $mentor = Mentor::orderBy('order_mentor','asc')->get();
+        
+        if($permalink == 'mitra'){
+            $mitra_program = Program::where('program_kategori',5)->get();
+
+            return view('page.mitra',[
+                'mitra_program' => $mitra_program
+            ]);
+        }
 
         if($halaman->halaman_tipe == 1){
             // View

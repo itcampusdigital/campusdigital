@@ -499,66 +499,29 @@
         integrity="sha512-nIm/JGUwrzblLex/meoxJSPdAKQOe2bLhnrZ81g5Jbh519z8GFJIWu87WAhBH+RAyGbM4+U3S2h+kL5JoV6/wA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style type="text/css">
-        .bgc {
-            background-image: linear-gradient(rgba(51, 3, 105, 1), rgba(51, 3, 105, 1), rgba(51, 3, 105, 0.80), rgba(51, 3, 105, 0.47));
-        }
-
-        .btn-kuning {
-            background-color: #fdd100;
-        }
-
-        .btn-kuning:hover {
-            background-color: rgba(255, 215, 0, 0.2);
-            color: #340369;
-        }
-
+        .bgc {background-image: linear-gradient(rgba(51, 3, 105, 1), rgba(51, 3, 105, 1), rgba(51, 3, 105, 0.80), rgba(51, 3, 105, 0.47));}
+        .btn-kuning {background-color: #fdd100;}
+        .btn-kuning:hover {background-color: rgba(255, 215, 0, 0.2);color: #340369;}
         .card.custom {
             background-color: white;
             box-shadow: 1px 1px 37px 8px rgba(231, 160, 247, 0.44);
             -webkit-box-shadow: 1px 1px 37px 8px rgba(231, 160, 247, 0.44);
             -moz-box-shadow: 1px 1px 37px 8px rgba(231, 160, 247, 0.44);
         }
-
-        .img12 {
-            height: 100%;
-            width: auto;
-        }
-
+        .img12 {height: 100%;width: auto;}
         .hero {
             max-width: 700px;
             background-position: center;
             background-size: cover;
             animation: up-down 1.5s ease-in-out infinite alternate-reverse both;
         }
-
         @keyframes up-down {
-            0% {
-                transform: translateY(10px);
-            }
-
-            100% {
-                transform: translateY(-10px);
-            }
+            0% { transform: translateY(10px); }
+            100% {transform: translateY(-10px);}
         }
-
-        .btn-galery {
-            color: var(--primary);
-            background-color: var(--primary-s);
-            border-color: var(--primary-s);
-        }
-
-        .btn-galery:hover {
-            color: var(--bs-white);
-            background-color: var(--primary);
-            border-color: var(--primary);
-        }
-
-        #programs1 .owl-nav,
-        #programs2 .owl-nav {
-            position: absolute;
-            top: 50%;
-        }
-
+        .btn-galery {color: var(--primary);background-color: var(--primary-s);border-color: var(--primary-s);}
+        .btn-galery:hover {color: var(--bs-white);background-color: var(--primary);border-color: var(--primary);}
+        #programs1 .owl-nav,#programs2 .owl-nav {position: absolute;top: 50%;}
         #popupModal .close {
             position: absolute;
             right: -15px;
@@ -569,180 +532,50 @@
             height: 25px;
             opacity: 1 !important;
         }
-
-        .hero-section {
-            height: 600px;
-            padding-bottom: 0;
-        }
-
-        .hs-text {
-            padding-top: 0;
-            padding-right: 0;
-        }
-
-        .hs-text h2 {
-            font-size: 70px;
-            margin-bottom: 0;
-        }
-
-        .hs-text h3 {
-            font-size: 55px;
-            margin-bottom: 0;
-        }
-
-        .hs-text p {
-            font-size: 20px;
-            margin-bottom: 0;
-            margin-start: 20px;
-        }
-
-        .child_sec {
-            height: 600px;
-        }
-
-        .child {
-            height: 600px;
-        }
-
-        .pare {
-            height: 600px;
-            margin-top: 10px
-        }
-
-
-
+        .hero-section {height: 600px;padding-bottom: 0;}
+        .hs-text {padding-top: 0;padding-right: 0;}
+        .hs-text h2 {font-size: 70px;margin-bottom: 0;}
+        .hs-text h3 {font-size: 55px;margin-bottom: 0;}
+        .hs-text p {font-size: 20px;margin-bottom: 0;margin-start: 20px;}
+        .child_sec {height: 600px;}
+        .child { height: 600px;}
+        .pare {height: 600px;margin-top: 10px}
         @media only screen and (max-width: 767px) {
-
-
-            .hero-section {
-                padding-top: 5em;
-            }
-
-            .hs-text {
-                padding-top: 0;
-                margin-bottom: 0;
-            }
-
-            .hs-text h2 {
-                font-size: 50px;
-                margin-bottom: 0;
-            }
-
-            .hs-text h3 {
-                font-size: 35px;
-                margin-bottom: 0;
-            }
-
-            .hs-text p {
-                margin-start: 0;
-            }
-
-            .hero {
-                height: 350px;
-                margin-top: -50px margin-bottom: -20px
-            }
-
-
-            .hero-section {
-                padding-top: 5em;
-            }
-
-            .hs-text {
-                padding-top: 0;
-                margin-bottom: 0;
-            }
-
-            .hs-text h2 {
-                font-size: 60px;
-                margin-bottom: 0;
-            }
-
-            .hs-text h3 {
-                font-size: 45px;
-                margin-bottom: 0;
-            }
-
-            .hs-text p {
-                margin-start: 0;
-            }
-
-            .hero {
-                height: 450px;
-                margin-top: -50px
-            }
+            .hero-section {padding-top: 5em;}
+            .hs-text {padding-top: 0;margin-bottom: 0;}
+            .hs-text h2 {font-size: 50px;margin-bottom: 0;}
+            .hs-text h3 {font-size: 35px;margin-bottom: 0;}
+            .hs-text p {margin-start: 0;}
+            .hero {height: 350px;margin-top: -50px margin-bottom: -20px}
+            .hero-section {padding-top: 5em;}
+            .hs-text {padding-top: 0;margin-bottom: 0;}
+            .hs-text h2 {font-size: 60px;margin-bottom: 0;}
+            .hs-text h3 {font-size: 45px;margin-bottom: 0;}
+            .hs-text p {margin-start: 0;}
+            .hero {height: 450px;margin-top: -50px}
         }
-
         @media only screen and (min-width: 993px) and (max-width: 1199px) {
-
-            .jud1 {
-                margin-top: 70px
-            }
-
-            .pare {
-                height: 600px;
-                margin-top: 10px
-            }
-
-            .img12 {
-                height: 280px;
-            }
-
+            .jud1 { margin-top: 70px}
+            .pare {height: 600px;margin-top: 10px}
+            .img12 {height: 280px;}
         }
-
         @media only screen and (min-width: 768px) and (max-width: 991px) {
-            .jud1 {
-                margin-bottom: 0px;
-                margin-top: 80px;
-            }
-
-            .fontjudul {
-                font-size: 1em;
-            }
-
-            .fontdigital {
-                font-size: 1em;
-            }
-
-            .fonttext {
-                font-size: 1em;
-            }
-
-            .img12 {
-                height: 300px;
-            }
+            .jud1 {margin-bottom: 0px; margin-top: 80px;}
+            .fontjudul {font-size: 1em;}
+            .fontdigital {font-size: 1em;}
+            .fonttext {font-size: 1em;}
+            .img12 {height: 300px;}
         }
-
-
         @media only screen and (min-width:576px) and (max-width:767px) {
-            .child {
-                height: 520px;
-            }
-
-            .pare {
-                height: 520px
-            }
-
-            .fontjudul {
-                font-size: 1em;
-            }
-
-            .fontdigital {
-                font-size: 1em;
-            }
-
-            .fonttext {
-                font-size: 1em;
-            }
+            .child { height: 520px;}
+            .pare { height: 520px}
+            .fontjudul {font-size: 1em;}
+            .fontdigital {font-size: 1em;}
+            .fonttext {font-size: 1em;}
         }
-
         @media only screen and (max-width:575px) {
-            .child_sec {
-                height: 520px
-            }
-
-            .pare {
-                height: 520px
-            }
+            .child_sec {height: 520px}
+            .pare {height: 520px}
         }
     </style>
 @endsection
