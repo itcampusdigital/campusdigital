@@ -68,7 +68,7 @@
 
             <div class="col-12 col-sm-6 g-3">
                 <div class="card rounded-1 shadow">
-                    <img class="card-img-top" src="{{ asset('assets/images/mitra/1600316063.png') }}" alt="Card image cap">
+                    <img class="card-img-top" src="{{ image('assets/images/program/'.$mitra->program_gambar, 'program') }}" alt="Card image cap">
                     <div class="card-body">
                         <h5 class="card-title">{{ $mitra->program_title }}</h5>
                         <p class="card-text">{{ substr($mitra->konten,0,90) }}....
