@@ -58,19 +58,19 @@
                     {{-- <div class="owl-carousel owl-theme" id="programs1"> --}}
                     <div class="row">
                         @foreach ($program_reguler as $data)
-                            <div class="col-6 col-lg-3">
+                            <div class="col-12 col-sm-6 col-lg-3">
                                 <div class="card bgc border-0 shadow mb-3">
                                     <img src="{{ image('assets/images/program/' . $data->program_gambar, 'program') }}"
                                         class="card-img-top w-100 owl-lazy">
                                     <div class="card bg-light m-3">
                                         <div class="card-body">
                                             {{-- <p class="fw-bold text-truncate d-block">{{ $data->program_title }}</p> --}}
-                                            <p class="text-truncate-3 d-none d-md-box">
+                                            <p class="text-truncate-3 d-md-box">
+                                                {{-- {{ implode(' ', array_slice(str_word_count( html_entity_decode($data->program_manfaat), 1), 0, 100)) }} --}}
                                                 {{ substr(strip_tags(html_entity_decode($data->program_manfaat)), 0, 100) . '...' }}
                                             </p>
-                                            <div class="center" style="text-align: center">
-                                                <a href="/program/{{ $data->program_permalink }}"
-                                                    class="btn btn-kuning">Selengkapnya</a>
+                                            <div class="center mt-4" style="text-align: center">
+                                                <a href="/program/{{ $data->program_permalink }}"class="btn btn-kuning">Selengkapnya</a>
                                             </div>
                                         </div>
                                     </div>
