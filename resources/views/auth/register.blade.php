@@ -31,21 +31,21 @@
 								  </div>
 								  <p class="h6 text-center fw-bold mb-3 mt-5">Identitas Pendaftar</p>
 								  <div class="form-row">
-									<div class="form-group col-md-12">
+									<div class="form-group col-md-12 mb-2">
 										<label>Nama Lengkap <span class="text-danger">*</span></label>
 										<input type="text" name="nama_lengkap" class="form-control {{ $errors->has('nama_lengkap') ? 'border-danger' : '' }}" value="{{ old('nama_lengkap') }}" placeholder="Masukkan Nama Lengkap">
 										@if($errors->has('nama_lengkap'))
 										<div class="small text-danger mt-1">{{ ucfirst($errors->first('nama_lengkap')) }}</div>
 										@endif
 									</div>
-									<div class="form-group col-md-12">
+									<div class="form-group col-md-12 mb-2">
 										<label>Tanggal Lahir <span class="text-danger">*</span></label>
 										<input type="text" name="tanggal_lahir" class="form-control {{ $errors->has('tanggal_lahir') ? 'border-danger' : '' }}" value="{{ old('tanggal_lahir') }}" placeholder="Masukkan Tanggal Lahir (Format: dd/mm/yyyy)" autocomplete="off">
 										@if($errors->has('tanggal_lahir'))
 										<div class="small text-danger mt-1">{{ ucfirst($errors->first('tanggal_lahir')) }}</div>
 										@endif
 									</div>
-									<div class="form-group col-md-12">
+									<div class="form-group col-md-12 mb-2">
 										<label>Jenis Kelamin <span class="text-danger">*</span></label>
 										<div class="form-row">
 											<div class="col-sm-12">
@@ -67,14 +67,21 @@
 										<div class="small text-danger mt-1">{{ ucfirst($errors->first('jenis_kelamin')) }}</div>
 										@endif
 									</div>
-									<div class="form-group col-md-12">
+									<div class="form-group col-md-12 mb-2">
 										<label>Nomor HP <span class="text-danger">*</span></label>
 										<input type="text" name="nomor_hp" class="form-control {{ $errors->has('nomor_hp') ? 'border-danger' : '' }}" value="{{ old('nomor_hp') }}" placeholder="Masukkan Nomor HP">
 										@if($errors->has('nomor_hp'))
 										<div class="small text-danger mt-1">{{ ucfirst($errors->first('nomor_hp')) }}</div>
 										@endif
 									</div>
-									<div class="form-group col-md-12">
+									<div class="form-group col-md-12 mb-2">
+										<label>Asal/Nama Sekolah/Nama Instansi <span class="text-danger">*</span></label>
+										<input type="text" name="instansi" class="form-control {{ $errors->has('instansi') ? 'border-danger' : '' }}" value="{{ old('instansi') }}" placeholder="Masukkan Asal/Nama Sekolah/Nama Instansi">
+										@if($errors->has('instansi'))
+										<div class="small text-danger mt-1">{{ ucfirst($errors->first('instansi')) }}</div>
+										@endif
+									</div>
+									<div class="form-group col-md-12 mb-2">
 										<label>Profesi<span class="text-danger">*</span></label>
 										<select name="user_kategori" class="form-control {{ $errors->has('user_kategori') ? 'border-danger' : '' }}">
 											<option value="" disabled selected>Pilih Profesi</option>
@@ -97,21 +104,21 @@
 								  </div>
 								  <p class="h6 text-center fw-bold mb-3 mt-5">Akun Pendaftar</p>
 								  <div class="form-row">
-									<div class="form-group col-md-12">
+									<div class="form-group col-md-12 mb-2">
 										<label>Email <span class="text-danger">*</span></label>
 										<input type="email" name="email" class="form-control {{ $errors->has('email') ? 'border-danger' : '' }}" value="{{ old('email') }}" placeholder="Contoh: sirpobon8@gmail.com">
 										@if($errors->has('email'))
 										<div class="small text-danger mt-1">{{ ucfirst($errors->first('email')) }}</div>
 										@endif
 									</div>
-									<div class="form-group col-md-12">
+									<div class="form-group col-md-12 mb-2">
 										<label>Username <span class="text-danger">*</span></label>
 										<input type="text" name="username" class="form-control {{ $errors->has('username') ? 'border-danger' : '' }}" value="{{ old('username') }}" placeholder="Masukkan Username">
 										@if($errors->has('username'))
 										<div class="small text-danger mt-1">{{ ucfirst($errors->first('username')) }}</div>
 										@endif
 									</div>
-									<div class="form-group col-md-12">
+									<div class="form-group col-md-12 mb-2">
 										<label>Password <span class="text-danger">*</span></label>
 					                          <div class="input-group">
 										  	<input type="password" name="password" class="form-control {{ $errors->has('password') ? 'border-danger' : '' }}" placeholder="Masukkan Password">
@@ -125,7 +132,7 @@
 										<div class="small text-muted mt-1">Diisi minimal 6 karakter</div>
 										@endif
 									</div>
-									<div class="form-group col-md-12">
+									<div class="form-group col-md-12 mb-2">
 										<label>Ulangi Password <span class="text-danger">*</span></label>
 					                          <div class="input-group">
 									  		<input type="password" name="password_confirmation" class="form-control {{ $errors->has('password') ? 'border-danger' : '' }}" placeholder="Ulangi Password">
